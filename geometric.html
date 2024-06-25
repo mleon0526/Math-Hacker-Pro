@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Geometric Finders</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-dark bg-dark sticky-top">
+    <a href="index.html" target="_self" id="navbarTitle" class="navbar-brand">Math Solver PRO</a>
+    <button type="button" class="navbar-toggler" id="navbarButton" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+        <div id="containerNavbar" class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <ul class="navbar-nav">
+                        <a href="index.html" target="_self"><h5 class="navbarCategoriesTitles">Calculators</h5></a>
+                        <li class="nav-item">
+                            <a href="index.html#Scientific_Calculator" class="nav-link text-white">Scientific Calculator</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="index.html#Hypothenuse_Finder" class="nav-link text-white">Hypothenuse Finder</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="index.html#Herons_formula_Finder" class="nav-link text-white">Heron Area Finder</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="index.html#Find_angles_and_sides_of_Triangle_calculator" class="nav-link text-white">Trigonometric Calculator</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="navbar-nav">
+                        <a href="converters.html" target="_self"><h5 class="navbarCategoriesTitles">Converters</h5></a>
+                        
+                        <li class="nav-item">
+                          <a href="converters.html#Length_Converter" class="nav-link text-white">Length Converter</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="converters.html#Time_Converter" class="nav-link text-white">Time Converter</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="converters.html#Currency_Converter" class="nav-link text-white">Currency Converter</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="converters.html#Weight_Converter" class="nav-link text-white">Weight Converter</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="converters.html#Temperature_Converter" class="nav-link text-white">Temperature Converter</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="converters.html#Radian/Deegree_Converter" class="nav-link text-white">Radian/Degree Converter</a>
+                      </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="navbar-nav">
+                        <a href="geometric.html" target="_self"><h5 class="navbarCategoriesTitles">Geometric Finders</h5></a>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white" data-bs-toggle="collapse" data-bs-target="#volumeGeometricCollapse" aria-expanded="false" aria-controls="volumeGeometricCollapse">Volume</a>
+                            <ul class="collapse" id="volumeGeometricCollapse">
+                                <li class="nav-item">
+                                  <a href="geometric.html#volumeofRectangleTitle" class="nav-link text-white">Rectangle</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="geometric.html#volumeofSphereDiv" class="nav-link text-white">Sphere</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="geometric.html#volumeOfCylinderDiv" class="nav-link text-white">Cylinder</a>
+                                </li>
+
+                                <li class="nav-item">
+                                  <a href="geometric.html#volumeOfConeDiv" class="nav-link text-white">Cone</a>
+                              </li>
+                                <li class="nav-item">
+                                  <a href="geometric.html#volumeOfPyramidDiv" class="nav-link text-white">Pyramid</a>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="nav-link text-white" data-bs-toggle="collapse" data-bs-target="#areaGeometricCollapse" aria-expanded="false" aria-controls="areaGeometricCollapse">Area</a>
+                            <ul class="collapse" id="areaGeometricCollapse">
+                              
+                              <li class="nav-item">
+                                <a href="geometric.html#areaOfCricleDiv" class="nav-link text-white">Circle</a>
+                              </li>
+
+                              <li class="nav-item">
+                                <a href="geometric.html#areaOf2DRectangleDiv" class="nav-link text-white">Rectangle</a>
+                              </li>
+
+                              <li class="nav-item">
+                                <a href="geometric.html#areaOfTriangleDiv" class="nav-link text-white">Triangle</a>
+                              </li>
+
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="navbar-nav">
+                        <a href="documentation.html" target="_self"><h5 class="navbarCategoriesTitles">Documentation</h5></a>
+                        <li class="nav-item">
+                          <a href="documentation.html#Trigonometry_and_Geometry" class="nav-link text-white">Trigonometry</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="documentation.html#geometrySectionTitle" class="nav-link text-white">Geometry</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="documentation.html#Algebra" class="nav-link text-white">Algebra</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="documentation.html#Statistics" class="nav-link text-white">Statistics</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="documentation.html#Calculus" class="nav-link text-white">Calculus</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </nav>
+
+ <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 backgroundImage">
+          <main id="mainPage">
+    
+            <h1 class="hColor titleDetails" id="mainTitle">Geometric Finders</h1>
+
+            <div class="d-flex justify-content-center">
+              <p class="introParagraph mb-5">
+                Welcome to our Geometric Finders section, designed to help you quickly locate and calculate geometric properties like area and volume for two dimensional and three dimensional figures.
+                Our user-friendly tools provide precise results to assist with your geometric calculations and problem-solving needs. Perfect for students, educators, engineers, and anyone who loves math, our geometric finders simplify complex calculations and help you visualize geometric properties with ease. Explore a variety of shapes and formulas, and let our intuitive interface guide you through each step of your geometric journey.            
+              </p>
+            </div>
+                            
+            <section id="Volume_of_Shapes_Calculator" class="converterSectionDetails">
+          
+                    <h1 id="volumeofShapesTitle" class="converterTitleDetails">Volume of Shapes Calculators</h1>
+              
+                  <div class="container"><!-- Rectangular Prism Volume -->
+                    <div id="volumeofRectangleDiv" class="divVolumeDetails volumeBackground bg-dark p-4 d-flex flex-column align-items-center shadowForElements">
+                      <h2 id="volumeofRectangleTitle" class="converterTitleDetails volumeTitles">Volume of Rectangular Prism</h2>
+                      
+                      <div class="row justify-content-center align-items-center">
+                        
+                        <div class="shapeVolDivImg1 col-md-4 col-sm-12 mb-4 mb-md-0 bg-white">
+                          <img class="shapeVolImg1 img-fluid" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwebstockreview.net%2Fimages%2Fcube-clipart-rectangular-prism-2.png&f=1&nofb=1&ipt=e16b78cb4a7691bb087cf3f4df436373ef3cf6614afc7b450e9ef24f6ad6a0fc&ipo=images" alt="Rectangular Prism">
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-12 mb-4 mb-md-0">
+                          <div class="d-flex flex-column align-items-center justify-content-between">
+                            <input class="form-control text-white mb-3 volumeInputBoxes" id="heightRectVol" type="number" placeholder="Height">
+                            <input class="form-control text-white mb-3 volumeInputBoxes" id="widthRectVol" type="number" placeholder="Width">
+                            <input class="form-control text-white mb-3 volumeInputBoxes" id="lengthRectVol" type="number" placeholder="Length">
+                            <input class="form-control text-white mb-3 volumeInputBoxes" id="showVolRectangleResult" type="number" placeholder="Volume">
+                            <button class="btn btn-info flex-grow-1" type="button" id="getRecVolBtn" onclick="calcuateVolOfRectangle()">Submit</button>
+                          </div>
+                        </div>
+                  
+                        <div class="col-md-4 col-sm-12 shapeVolDivImg2">
+                          <img class="img-fluid shapeVolImg2" src="Images/formulasRectangleVolume2.png" alt="Formulas for Rectangular Prism">
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="container"><!--Sphere Volume -->
+                    <div id="volumeofSphereDiv" class="divVolumeDetails volumeBackground bg-dark p-4 d-flex flex-column align-items-center shadowForElements">
+                      <h2 id="volumeOfSphereTitle" class="converterTitleDetails volumeTitles">Volume of Sphere</h2>
+                      <div class="row justify-content-center align-items-center">
+                        <div class=" shapeVolDivImg1 col-md-4 col-sm-12 mb-4 mb-md-0 bg-white">
+                          <img class="shapeVolImg1 img-fluid " src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F5%2F5b%2FSphere.svg%2F512px-Sphere.svg.png&f=1&nofb=1&ipt=6de1ff999e6b33e3820bf6d51eefef16cce1bb2785ebb11d0c0e56c3521d43f6&ipo=images" alt="Sphere">
+                        </div>
+                        <div class="col-md-4 col-sm-12 mb-4 mb-md-0">
+                          <div class="d-flex flex-column align-items-center justify-content-between">
+                            <input class="form-control text-white mb-3 volumeInputBoxes" type="number" placeholder="Radius" id="placeSphereRadiusNumber">
+                            <input class="form-control text-white mb-3 volumeInputBoxes" type="number" id="sphereVolume" placeholder="Volume">
+                            <button class="btn btn-info flex-grow-1" type="button" id="getSphcVol" onclick="calculatorVolumeOfSphereFormula()">Submit</button>
+                          </div>
+                        </div>
+                        <div class="shapeVolDivImg2 col-md-4 col-sm-12 mb-4 mb-md-0 bg-white">
+                          <img class="shapeVolImg2 img-fluid rounded-3" src="/Images/formulasSphereGeometry.png" alt="Formulas for Circle">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="container"><!-- Cylinder Volume -->
+                    <div id="volumeOfCylinderDiv" class="divVolumeDetails volumeBackground bg-dark p-4 d-flex flex-column align-items-center shadowForElements">
+                      <h2 id="volumeOfCylinderTitle" class="converterTitleDetails volumeTitles">Volume of Cylinder</h2>
+                      <div class="row justify-content-center align-items-center">
+                        
+                        <div class="shapeVolDivImg1 col-md-4 col-sm-12 mb-4 mb-md-0 bg-white">
+                          <img class="shapeVolImg1 img-fluid" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Frankupturn.in%2Fimages%2Fcylinder.png&f=1&nofb=1&ipt=963889b5aeae9c03874f55544218da874ce813a1000e35b24edd3f62d2f198fc&ipo=images" alt="Sphere">
+                        </div>
+                
+                        <div class="col-md-4 col-sm-12 mb-4 mb-md-0">
+                          <div class="d-flex flex-column align-items-center justify-content-between">
+                            <input class="form-control text-white mb-3 volumeInputBoxes" type="number" id="placeCylinderRadius" placeholder="Radius">
+                            <input class="form-control text-white mb-3 volumeInputBoxes" type="number" id="placeCylinderHeight" placeholder="Height">
+                            <input class="form-control text-white mb-3 volumeInputBoxes" type="number" id="placeCylinderVolume" placeholder="Volume">
+                            <button class="btn btn-info flex-grow-1" type="button" id="getCylVol" onclick="calculatorVolumeOfCylinderFormula()">Submit</button>
+                          </div>
+                        </div>
+                
+                        <div class=" shapeVolDivImg2 col-md-4 col-sm-12 mb-4 mb-md-0 bg-white">
+                          <img class=" shapeVolImg2 img-fluid" src="Images/formulasCylinderVolume2.png" alt="Sphere">
+                        </div>
+                
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="container"><!-- Cone volume -->
+                    <div id="volumeOfConeDiv" class="divVolumeDetails volumeBackground bg-dark p-4 d-flex flex-column align-items-center shadowForElements">
+                      <h2 id="volumeOfConeTitle" class="converterTitleDetails volumeTitles">Volume of Cone</h2>
+                      <div class="row justify-content-center align-items-center">
+                        
+                        <div class="shapeVolDivImg1 col-md-4 col-sm-12 mb-4 mb-md-0 bg-white">
+                          <img class="shapeVolImg1 img-fluid" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.cTsVCmPOiVJi5ngk4V8fDwHaHa%26pid%3DApi&f=1&ipt=e2772268176b6a7c26bf46bb8cce2ed4b735fb7fb6c0150b785d7b4257077a0d&ipo=images" alt="Sphere">
+                        </div>
+                
+                        <div class="col-md-4 col-sm-12 mb-4 mb-md-0">
+                          <div class="d-flex flex-column align-items-center justify-content-between">
+                            <input class="form-control text-white mb-3 volumeInputBoxes" type="number" placeholder="Height" id="coneHeight">
+                            <input class="form-control text-white mb-3 volumeInputBoxes" type="number" id="coneRadius" placeholder="Radius">
+                            <input class="form-control text-white mb-3 volumeInputBoxes" type="number" id="coneVolume" placeholder="Volume">
+                            <button class="btn btn-info flex-grow-1" type="button" id="getConeVol" onclick="calculatorVolumeOfConeFormula()">Submit</button>
+                          </div>
+                        </div>
+                
+                        <div class=" shapeVolDivImg2 col-md-4 col-sm-12 mb-4 mb-md-0 bg-white">
+                          <img class="shapeVolImg2 img-fluid" src="Images/formulaConeVolume.png" alt="Sphere">
+                        </div>
+                
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="container"><!-- Pyramid Volume -->
+                    <div id="volumeOfPyramidDiv" class="divVolumeDetails volumeBackground bg-dark p-4 d-flex flex-column align-items-center shadowForElements">
+                      <h2 id="volumeOfPyramidTitle" class="converterTitleDetails volumeTitles">Volume of Pyramid</h2>
+                      
+                      <div class="row justify-content-center align-items-center">
+                        
+                        <div class="shapeVolDivImg1 col-md-4 col-sm-12 mb-4 mb-md-0 bg-white">
+                          <img class="shapeVolImg1 img-fluid" src="/Images/pyramid-removebg-preview.png" alt="Pyramid">
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-12 mb-4 mb-md-0">
+                          <div class="d-flex flex-column align-items-center justify-content-between">
+                            <input class="form-control text-white mb-3 volumeInputBoxes" type="number" placeholder="Height" id="pyramidHeight">
+                            <input class="form-control text-white mb-3 volumeInputBoxes" type="number" placeholder="Length" id="pyramidLength">
+                            <input class="form-control text-white mb-3 volumeInputBoxes" type="number" placeholder="Width" id="pyramidWidth">
+                            <input class="form-control text-white mb-3 volumeInputBoxes" type="number" placeholder="Volume" id="pyramidVolume">
+                            <button class="btn btn-info flex-grow-1" type="button" id="getPyramidVolBtn" onclick="calculatorVolumeOfPyramidFormula()">Submit</button>
+                          </div>
+                        </div>
+                  
+                        <div class="shapeVolDivImg2 col-md-4 col-sm-12">
+                          <img class="shapeVolImg2 img-fluid" src="Images/formulaPyramidVolume.png" alt="Formulas for Rectangular Prism">
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+        
+            </section>
+                            
+            <section id="Area_of_Shapes_Calculator">
+        
+                    <h1 class="converterTitleDetails">Area of Shapes Calculators</h1>
+                    
+                    <div class="container"><!--Circle Area-->
+                      <div id="areaOfCricleDiv" class="divVolumeDetails volumeBackground bg-dark p-4 d-flex flex-column align-items-center shadowForElements">
+                        
+                        <h2 id="areaOfCircleTitle" class="converterTitleDetails GeometricTitles">Area of Circle</h2>
+        
+                        <div class="row justify-content-center align-items-center">
+                          
+                          <div id="circleArDivImg1" class="shapeGeoDivImg1 col-md-4 col-sm-12 mb-4 mb-md-0 bg-white">
+                            <img id="shapeGeoImg1" class="shapeGeoImg1 img-fluid" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fa%2Fa0%2FCircle_-_black_simple.svg%2F1200px-Circle_-_black_simple.svg.png&f=1&nofb=1&ipt=673d656aa4672260827f55d98d04333b3683fb481e48f986327a16fef293dd89&ipo=images" alt="Circle">
+                          </div>
+                          
+                          <div class="col-md-4 col-sm-12 mb-4 mb-md-0">
+        
+                            <div class="d-flex flex-column align-items-center justify-content-between">
+                              <input class="GeometricInputBoxes form-control text-white mb-3" type="number" placeholder="Radius" id="circleRadius">
+                              <input class="GeometricInputBoxes form-control text-white mb-3" type="number" id="circleArea" placeholder="Area">
+                              <button class="btn btn-info flex-grow-1" type="button" id="getCircleArea" onclick="calculateAreaOfCircle()">Submit</button>
+                            </div>
+        
+                          </div>
+        
+                          <div class="shapeGeoDivImg2 col-md-4 col-sm-12 mb-4 mb-md-0 bg-white">
+                            <img class="shapeGeoImg2 img-fluid" src="/Images/formulaCircleArea.png" alt="Formulas for Circle">
+                          </div>
+        
+                        </div>
+                      </div>
+                    </div>
+                    
+        
+                    <div class="container"><!-- Rectangle Area -->
+                      <div id="areaOf2DRectangleDiv" class="divVolumeDetails volumeBackground bg-dark p-4 d-flex flex-column align-items-center shadowForElements">
+                        <h2 id="areaOf2DRectangleTitle" class="converterTitleDetails GeometricTitles">Area of Rectangle</h2>
+                        <div class="row justify-content-center align-items-center">
+                          
+                          <div class="shapeGeoDivImg1 col-md-4 col-sm-12 mb-4 mb-md-0 bg-white">
+                            <img class="shapeGeoImg1 img-fluid" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F98%2F4a%2F76%2F984a7602f2200e18e6a8657722c09385.png&f=1&nofb=1&ipt=d28b98fba60372010eccc4148de2e94e966d5b0eca08f0e5b6559374dbc7551f&ipo=images" alt=" 2D Rectangle">
+                          </div>
+                  
+                          <div class="col-md-4 col-sm-12 mb-4 mb-md-0">
+                            <div class="d-flex flex-column align-items-center justify-content-between">
+                              <input class="form-control text-white mb-3 GeometricInputBoxes" type="number" id="rectangle2DLength" placeholder="Length">
+                              <input class="form-control text-white mb-3 GeometricInputBoxes" type="number" id="rectangle2DWidth"  placeholder="Width">
+                              <input class="form-control text-white mb-3 GeometricInputBoxes" type="number" id="area2DRectangle"   placeholder="Area">
+                              <button class="btn btn-info flex-grow-1" type="button" id="get2DRecArea" onclick="calculateAreaOfRectangle()">Submit</button>
+                            </div>
+                          </div>
+                  
+                          <div class="shapeGeoDivImg2 col-md-4 col-sm-12 mb-4 mb-md-0 bg-white">
+                            <img class="shapeGeoImg2 img-fluid" src="Images/formulaArea2DRectangle.png" alt="Sphere">
+                          </div>
+                  
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="container"><!-- Triangle Area -->
+                      <div id="areaOfTriangleDiv" class="divVolumeDetails volumeBackground bg-dark p-4 d-flex flex-column align-items-center shadowForElements">
+                        <h2 id="areaOfTriangleTitle" class="converterTitleDetails GeometricTitles">Area of Triangle</h2>
+                        <div class="row justify-content-center align-items-center">
+                          
+                          <div class="shapeGeoDivImg1 col-md-4 col-sm-12 mb-4 mb-md-0 bg-white">
+                            <img class="shapeGeoImg1 img-fluid" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F4%2F4f%2FSimple_triangle.svg%2F1200px-Simple_triangle.svg.png&f=1&nofb=1&ipt=03cdac670de2332868d67344fde1b892367484308a52979c0eebba323fcf3f76&ipo=images"alt="Triangle">
+                          </div>
+                  
+                          <div class="col-md-4 col-sm-12 mb-4 mb-md-0">
+                            <div class="d-flex flex-column align-items-center justify-content-between">
+                              <input class="form-control text-white mb-3 GeometricInputBoxes" type="number" id="heightAreaTriangle" placeholder="Height">
+                              <input class="form-control text-white mb-3 GeometricInputBoxes" type="number" id="baseAreaTriangle"  placeholder="Base">
+                              <input class="form-control text-white mb-3 GeometricInputBoxes" type="number" id="areaOfTriangle"   placeholder="Area">
+                              <button class="btn btn-info flex-grow-1" type="button" id="get2DRecArea" onclick="calculateAreaOfTriangle()">Submit</button>
+                            </div>
+                          </div>
+                  
+                          <div class="shapeGeoDivImg2 col-md-4 col-sm-12 mb-4 mb-md-0 bg-white">
+                            <img class="shapeGeoImg2 img-fluid" src="Images/formulaAreaTriangle.png" alt="Sphere">
+                          </div>
+                  
+                        </div>
+                      </div>
+                    </div>
+        
+            </section>  
+          
+          </main>
+        </div>
+    </div>
+ </div>
+
+ <!-- Footer -->
+<footer class="footer bg-dark text-white py-4">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+              <a href="index.html" target="_self" id="navbarTitle" class="navbar-brand text-white">Math Solver PRO</a>
+              <h5 class="mt-2">Juan Matias Leon Lau</h5>
+          </div>
+          <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+              <p class="m-0">&copy; 2024 Math Solver PRO. All rights reserved.</p>
+          </div>
+          <div class="col-12 col-md-4 text-center text-md-end">
+            <a title="Github.com" href="https://github.com/mleon0526" target="_blank" class="text-white me-3"><i class="fa-brands fa-github fa-2x"></i></a>
+            <a title="stackoverflow.com" href="https://stackoverflow.com/users/22128785/matias-leon-lau?tab=profile" target="_blank" class="text-white me-3"><i class="fa-brands fa-stack-overflow fa-2x"></i></a>
+            <a title="gmail.com" href="mailto:matiasleonlau@gmail.com" class="text-white me-3"><i class="fas fa-envelope fa-2x"></i></a>              
+            <a title="linkedin.com" href="https://www.linkedin.com/in/matias-leon-lau-24a026282/" target="_blank" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+ <script src="main.js"></script>
+ <script src="volume.js"></script>
+ <script src="area.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

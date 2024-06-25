@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Converters</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav id="navbar" class="navbar navbar-dark bg-dark sticky-top">
+        <a href="index.html" target="_self" id="navbarTitle" class="navbar-brand">Math Solver PRO</a>
+        <button type="button" class="navbar-toggler" id="navbarButton" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <div id="containerNavbar" class="container">
+                <div class="row">
+    
+                    <div class="col-md-3">
+                        <ul class="navbar-nav">
+                            <a href="index.html" target="_self"><h5 class="navbarCategoriesTitles">Calculators</h5></a>
+                            <li class="nav-item">
+                                <a href="index.html#Scientific_Calculator" class="nav-link text-white">Scientific Calculator</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="index.html#Hypothenuse_Finder" class="nav-link text-white">Hypothenuse Finder</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="index.html#Herons_formula_Finder" class="nav-link text-white">Heron Area Finder</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="index.html#Find_angles_and_sides_of_Triangle_calculator" class="nav-link text-white">Trigonometric Calculator</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <ul class="navbar-nav">
+                            <a href="converters.html" target="_self"><h5 class="navbarCategoriesTitles">Converters</h5></a>
+                            
+                            <li class="nav-item">
+                              <a href="converters.html#Length_Converter" class="nav-link text-white">Length Converter</a>
+                            </li>
+    
+                            <li class="nav-item">
+                              <a href="converters.html#Time_Converter" class="nav-link text-white">Time Converter</a>
+                            </li>
+    
+                            <li class="nav-item">
+                              <a href="converters.html#Currency_Converter" class="nav-link text-white">Currency Converter</a>
+                            </li>
+    
+                            <li class="nav-item">
+                              <a href="converters.html#Weight_Converter" class="nav-link text-white">Weight Converter</a>
+                            </li>
+    
+                            <li class="nav-item">
+                              <a href="converters.html#Temperature_Converter" class="nav-link text-white">Temperature Converter</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="converters.html#Radian/Deegree_Converter" class="nav-link text-white">Radian/Degree Converter</a>
+                            </li>
+    
+                        </ul>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <ul class="navbar-nav">
+                            <a href="geometric.html" target="_self"><h5 class="navbarCategoriesTitles">Geometric Finders</h5></a>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white" data-bs-toggle="collapse" data-bs-target="#volumeGeometricCollapse" aria-expanded="false" aria-controls="volumeGeometricCollapse">Volume</a>
+                                <ul class="collapse" id="volumeGeometricCollapse">
+                                    <li class="nav-item">
+                                      <a href="geometric.html#volumeofRectangleTitle" class="nav-link text-white">Rectangle</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="geometric.html#volumeofSphereDiv" class="nav-link text-white">Sphere</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="geometric.html#volumeOfCylinderDiv" class="nav-link text-white">Cylinder</a>
+                                    </li>
+    
+                                    <li class="nav-item">
+                                      <a href="geometric.html#volumeOfConeDiv" class="nav-link text-white">Cone</a>
+                                  </li>
+                                    <li class="nav-item">
+                                      <a href="geometric.html#volumeOfPyramidDiv" class="nav-link text-white">Pyramid</a>
+                                    </li>
+                                </ul>
+    
+                                <a href="#" class="nav-link text-white" data-bs-toggle="collapse" data-bs-target="#areaGeometricCollapse" aria-expanded="false" aria-controls="areaGeometricCollapse">Area</a>
+                                <ul class="collapse" id="areaGeometricCollapse">
+                                  
+                                  <li class="nav-item">
+                                    <a href="geometric.html#areaOfCricleDiv" class="nav-link text-white">Circle</a>
+                                  </li>
+    
+                                  <li class="nav-item">
+                                    <a href="geometric.html#areaOf2DRectangleDiv" class="nav-link text-white">Rectangle</a>
+                                  </li>
+    
+                                  <li class="nav-item">
+                                    <a href="geometric.html#areaOfTriangleDiv" class="nav-link text-white">Triangle</a>
+                                  </li>
+    
+                                </ul>
+    
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <ul class="navbar-nav">
+                            <a href="documentation.html" target="_self"><h5 class="navbarCategoriesTitles">Documentation</h5></a>
+                            <li class="nav-item">
+                              <a href="documentation.html#Trigonometry_and_Geometry" class="nav-link text-white">Trigonometry</a>
+                            </li>
+    
+                            <li class="nav-item">
+                              <a href="documentation.html#geometrySectionTitle" class="nav-link text-white">Geometry</a>
+                            </li>
+    
+                            <li class="nav-item">
+                              <a href="documentation.html#Algebra" class="nav-link text-white">Algebra</a>
+                            </li>
+    
+                            <li class="nav-item">
+                              <a href="documentation.html#Statistics" class="nav-link text-white">Statistics</a>
+                            </li>
+    
+                            <li class="nav-item">
+                              <a href="documentation.html#Calculus" class="nav-link text-white">Calculus</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+ <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 backgroundImage">
+    
+            <main id="mainPage">
+    
+                <h1 class="hColor titleDetails" id="mainTitle">Converters</h1>
+
+                <div class="d-flex justify-content-center">
+                    <p class="introParagraph mb-5">
+                        Welcome to our converters section, where you can effortlessly switch between various measurement units such as length, time, currency, Weight, temperature and a radian/degree converter for trigonometric purposes. 
+                        Whether you're cooking, doing science experiments, or managing technical projects, our converters are here to ensure you have the exact measurements you need at your fingertips. Discover the ease of converting units with our user-friendly interface and comprehensive selection of conversion tools.                    </p>
+                  </div>
+                            
+                <section id="Length_Converter" class="converterSectionDetails bg-dark heightConverterDetail shadowForElements">
+            <h1 class="converterTitleDetails">Length Converter</h1>
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-xxl-4">
+                        <div class="input-group input-group-md">
+                            
+                          <select class="selectorsConverters bg-info text-white" id="selectLength" for="placeLength">
+                            <option value="mm">Milimeters</option>
+                            <option value="cm">Centimeters</option>
+                            <option value="m">Meters</option>
+                            <option value="km">Kilometers</option>
+                            <option value="mi">Miles</option>
+                            <option value="in">Inches</option>
+                            <option value="yd">Yards</option>
+                            <option value="ft">Feet</option>
+                          </select>
+                            
+                            <input type="number" placeholder="Length" id="placeLength" class="form-control text-white converterInputBoxes" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))">
+                            <button class="converterButtons" id="lengthConverterButton">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                                  <path fill="white" fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                              </svg>
+                          </button>
+                          
+                            <input type="number" placeholder="Result" id="lengthResult" class="form-control text-white converterInputBoxes" readonly>
+                           
+                            <select class="selectorsConverters bg-info text-white" id="typeOfResult" for="placeLength">
+                             <option value="mm">Milimeters</option>
+                             <option value="cm">Centimeters</option>
+                             <option value="m">Meters</option>
+                             <option value="km">Kilometers</option>
+                             <option value="mi">Miles</option>
+                             <option value="in">Inches</option>
+                             <option value="yd">Yards</option>
+                             <option value="ft">Feet</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5 style="color:white">Milimeters</h5>
+                        <ul style="color: aliceblue;">
+                            <li>1 mm = 0.1cm</li>
+                            <li>1 mm = 0.001m</li>
+                            <li>1 mm = 0.000001km</li>
+                            <li>1 mm = 0.000000621371 mi</li>
+                            <li>1 mm = 0.0393701 in</li>
+                            <li>1 mm = 0.00109361 yd</li>
+                            <li>1 mm = 0.00328084 ft</li>
+                        </ul>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <h5 style="color:white">Centimeters</h5>
+                        <ul style="color: aliceblue;">
+                            <li>1 cm = 10 mm</li>
+                            <li>1 cm = 0.01 m</li>
+                            <li>1 cm = 0.00001 km</li>
+                            <li>1 cm = 0.0000062137 mi</li>
+                            <li>1 cm = 0.393701 in</li>
+                            <li>1 cm = 0.0109361 yds</li>
+                            <li>1 cm = 0.0328084 ft</li>
+                        </ul>
+                    </div>
+        
+        
+                    <div class="col-md-3">
+                        <h5 style="color:white">Meters</h5>
+                        <ul style="color: aliceblue;">
+                            <li>1 m= 1000 mm</li>
+                            <li>1 m= 100 cm</li>
+                            <li>1 m= 0.001 km</li>
+                            <li>1 m= 0.000621371 mi</li>
+                            <li>1 m= 39.3701 in</li>
+                            <li>1 m= 1.09361 yd</li>
+                            <li>1 m= 3.28084 ft</li>
+                        </ul>
+                    </div>
+        
+        
+                    <div class="col-md-3">
+                        <h5 style="color:white">Kilometer</h5>
+                        <ul style="color: aliceblue;">
+                            <li>1 km = 1,000,000 mm</li>
+                            <li>1 km = 100,000 cm</li>
+                            <li>1 km = 1,000 m</li>
+                            <li>1 km = 0.621371 mi</li>
+                            <li>1 km = 39,370.1 in</li>
+                            <li>1 km = 1,093.61 yds</li>
+                            <li>1 km = 3,280.84ft</li>
+                        </ul>
+                    </div>
+        
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5 style="color:white">Miles</h5>
+                        <ul style="color: aliceblue;">
+                            <li>1 mile = 1,609,344 mm</li>
+                            <li>1 mile = 160,934.4 cm</li>
+                            <li>1 mile = 1,609.344 m</li>
+                            <li>1 mile = 1.609344 km</li>
+                            <li>1 mile = 63,360 in</li>
+                            <li>1 mile = 1,760 yds</li>
+                            <li>1 mile = 5,280 ft</li>
+                        </ul>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <h5 style="color:white">Inches</h5>
+                        <ul style="color: aliceblue;">
+                            <li>1 in = 25.4 mm</li>
+                            <li>1 in = 2.54 cm</li>
+                            <li>1 in = 0.0254 m</li>
+                            <li>1 in = 0.0000254 km</li>
+                            <li>1 in = 0.00001578283 mi</li>
+                            <li>1 in = 0.0277777778 yd</li>
+                            <li>1 in = 0.0833333333 ft</li>
+                        </ul>
+                    </div>
+        
+        
+                    <div class="col-md-3">
+                        <h5 style="color:white">feet</h5>
+                        <ul style="color: aliceblue;">
+                            <li>1 ft = 304.8 mm</li>
+                            <li>1 ft = 30.48 cm</li>
+                            <li>1 ft = 0.3048 m</li>
+                            <li>1 ft = 0.0003048 km</li>
+                            <li>1 ft = 0.000189394 mi</li>
+                            <li>1 ft = 12 in</li>
+                            <li>1 ft = 0.333333 yds</li>
+                        </ul>   
+                    </div>
+
+                    <div class="col-md-3">
+                        <h5 style="color:white">Yards</h5>
+                        <ul style="color: aliceblue;">
+                            <li>1 yds = 914.4 mm</li>
+                            <li>1 yds = 91.44 cm</li>
+                            <li>1 yds = 0.9144 m</li>
+                            <li>1 yds = 0.0009144 km</li>
+                            <li>1 yds = 0.000568182 mi</li>
+                            <li>1 yds = 3 ft</li>
+                            <li>1 yds = 36 in</li>
+                        </ul>   
+                    </div>
+        
+                </div>
+            </div>
+
+                </section>
+           
+                <section id="Time_Converter" class="converterSectionDetails bg-dark heightConverterDetail shadowForElements">
+          <h1 class="converterTitleDetails">Time Converter</h1>
+          <div class="container text-center" id="lengthConverterDiv">
+              <div class="row justify-content-center">
+                  <div class="col-xxl-4">
+                      <div class="input-group input-group-md">
+                          
+                          <select class="selectorsConverters bg-info text-white" id="selectTime" for="chosenTime">
+                              <option value="nanoSeconds">Nanoseconds</option>
+                              <option value="microSeconds">Microseconds</option>
+                              <option value="miliSeconds">Miliseconds</option>
+                              <option value="centiSeconds">Centiseconds</option>
+                              <option value="deciSeconds">Deciseconds</option>
+                              <option value="seconds">Seconds</option>
+                              <option value="minutes">Minutes</option>
+                              <option value="hours">Hours</option>
+                              <option value="days">Days</option>
+                              <option value="weeks">Weeks</option>
+                              <option value="months">Month</option>
+                              <option value="years">Years</option>
+                          </select>
+                          
+                          <input type="number" placeholder="Time" id="chosenTime" class="form-control text-white converterInputBoxes" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))">
+                          
+                          <button class="converterButtons converterButtons" id="timeConverterButton">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                                <path fill="white" fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                            </svg>
+                        </button>
+                        
+                          <input type="number" placeholder="Result" id="timeResult" class="form-control text-white converterInputBoxes" readonly>
+                         
+                          <select class="selectorsConverters bg-info text-white" id="typeOfTimeResult" for="timeResult">
+                              <option value="nanoSeconds">Nanoseconds</option>
+                              <option value="microSeconds">Microseconds</option>
+                              <option value="miliSeconds">Miliseconds</option>
+                              <option value="centiSeconds">Centiseconds</option>
+                              <option value="deciSeconds">Deciseconds</option>
+                              <option value="seconds">Seconds</option>
+                              <option value="minutes">Minutes</option>
+                              <option value="hours">Hours</option>
+                              <option value="days">Days</option>
+                              <option value="weeks">Weeks</option>
+                              <option value="months">Month</option>
+                              <option value="years">Years</option>                      
+                          </select>
+                        </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 style="color:white">Nanoseconds</h5>
+                    <ul style="color: aliceblue;">
+                        <li>1 ns = 0.001 μs</li>
+                        <li>1 ns = 1e-6 ms</li>
+                        <li>1 ns = 1e-7 cs</li>
+                        <li>1 ns = 1e-8 ds</li>
+                        <li>1 ns = 1e-9 s</li>
+                        <li>1 μs = 1.66667e-11 min</li>
+                        <li>1 ns = 2.77778e-13 hr</li>
+                        <li>1 ns = 1.15741e-14 dy</li>
+                        <li>1 ns = 1.65344e-15 wk</li>
+                        <li>1 ns = 3.80517e-16 mh</li>
+                        <li>1 ns = 3.16888e-17 yr</li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-3">
+                    <h5 style="color:white">Microseconds</h5>
+                    <ul style="color: aliceblue;">
+                        <li>1 μs = 1000 ns</li>
+                        <li>1 μs = 0.001 ms</li>
+                        <li>1 μs = 0.01 cs</li>
+                        <li>1 μs = 0.1 ds</li>
+                        <li>1 μs = 1 x 10^-6 s</li>
+                        <li>1 μs = 1.66667e-8 min</li>
+                        <li>1 μs = 2.77778e-10 hr</li>
+                        <li>1 μs = 1.15741e-11 dy</li>
+                        <li>1 μs = 1.65344e-12 wk</li>
+                        <li>1 μs = 3.80517e-13 mh</li>
+                        <li>1 μs = 3.16888e-14 yr</li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-3">
+                    <h5 style="color:white">Milliseconds</h5>
+                    <ul style="color: aliceblue;">
+                        <li>1 ms = 1e6 ns</li>
+                        <li>1 ms = 1000 μs</li>
+                        <li>1 ms = 100 cs</li>
+                        <li>1 ms = 10 ds</li>
+                        <li>1 ms = 0.001 s</li>
+                        <li>1 ms = 1.66667e-5 min</li>
+                        <li>1 ms = 2.77778e-7 hr</li>
+                        <li>1 ms = 1.15741e-8 dy</li>
+                        <li>1 ms = 1.65344e-9 wk</li>
+                        <li>1 ms = 3.80517e-10 mh</li>
+                        <li>1 ms = 3.16888e-11 yr</li>
+                    </ul>
+                </div>
+    
+    
+                <div class="col-md-3">
+                    <h5 style="color:white">Centiseconds</h5>
+                    <ul style="color: aliceblue;">
+                        <li>1 cs = 1e6 ns</li>
+                        <li>1 cs = 10000 μs</li>
+                        <li>1 cs = 10 ms</li>
+                        <li>1 cs = 0.1 ds</li>
+                        <li>1 cs = 0.01 s</li>
+                        <li>1 cs = 1.66667e-4 min</li>
+                        <li>1 cs = 2.77778e-6 hr</li>
+                        <li>1 cs = 1.15741e-7 dy</li>
+                        <li>1 cs = 1.65344e-8 wk</li>
+                        <li>1 cs = 3.80517e-9 mh</li>
+                        <li>1 cs = 3.16888e-10 yr</li>
+                    </ul>
+                </div>
+    
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-3">
+                    <h5 style="color:white">Deciseconds</h5>
+                    <ul style="color: aliceblue;">
+                        <li>1 ds = 1e8 ns</li>
+                        <li>1 ds = 1e5 μs</li>
+                        <li>1 ds = 100 ms</li>
+                        <li>1 ds = 10 cs</li>
+                        <li>1 ds = 0.1 s</li>
+                        <li>1 ds = 0.00167 min</li>
+                        <li>1 ds = 2.2.778e-5 hr</li>
+                        <li>1 ds = 1.1574e-6 dy</li>
+                        <li>1 ds = 1.6534e-7 wk</li>
+                        <li>1 ds = 3.8052e-8 mh</li>
+                        <li>1 ds = 3.171e-9 yr</li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-3">
+                    <h5 style="color:white">Seconds</h5>
+                    <ul style="color: aliceblue;">
+                        <li>1 s = 1e9 ns</li>
+                        <li>1 s = 1e6 μs</li>
+                        <li>1 s = 1000 ms</li>
+                        <li>1 s = 100 cs</li>
+                        <li>1 s = 10 ds</li>
+                        <li>1 s = 0.0167 min</li>
+                        <li>1 s = 2.77778e-4 hr</li>
+                        <li>1 s = 1.15741e-5 dy</li>
+                        <li>1 s = 1.65344e-6 wk</li>
+                        <li>1 s = 3.80518e-7 mh</li>
+                        <li>1 s = 3.16881e-8 yr</li>
+                    </ul>
+                </div>
+    
+    
+                <div class="col-md-3">
+                    <h5 style="color:white">Minutes</h5>
+                    <ul style="color: aliceblue;">
+                        <li>1 min = 6e10 ns</li>
+                        <li>1 min = 6e7 μs</li>
+                        <li>1 min = 6e4 ms</li>
+                        <li>1 min = 6000 cs</li>
+                        <li>1 min = 600 ds</li>
+                        <li>1 min = 60 s</li>
+                        <li>1 min = 0.01 hr</li>
+                        <li>1 min = 6.944e-4 dy</li>
+                        <li>1 min = 9.9206e-5 wk</li>
+                        <li>1 min = 2.2831e-5 mh</li>
+                        <li>1 min = 1.9026e-6 yr</li>                    </ul>   
+                </div>
+
+                <div class="col-md-3">
+                    <h5 style="color:white">Hours</h5>
+                    <ul style="color: aliceblue;">
+                        <li>1 hr = 3.6e12 ns</li>
+                        <li>1 hr = 3.6e9 μs</li>
+                        <li>1 hr = 3.6e6 ms</li>
+                        <li>1 hr = 3.6e4 cs</li>
+                        <li>1 hr = 3.6e3 ds</li>
+                        <li>1 hr = 3600 s</li>
+                        <li>1 hr = 60 min</li>
+                        <li>1 hr = 4.16667e-2 dy</li>
+                        <li>1 hr = 5.95238e-3 wk</li>
+                        <li>1 hr = 1.36986e-3 mh</li>
+                        <li>1 hr = 1.14155e-4 yr</li>                    </ul>   
+                </div>
+    
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-3">
+                    <h5 style="color:white">Days</h5>
+                    <ul style="color: aliceblue;">
+                        <li>1 dy = 8.64e13 ns</li>
+                        <li>1 dy = 8.64e10 μs</li>
+                        <li>1 dy = 8.64e7 ms</li>
+                        <li>1 dy = 8.64e6 cs</li>
+                        <li>1 dy = 8.64e5 ds</li>
+                        <li>1 dy = 86400 s</li>
+                        <li>1 dy = 1440 min</li>
+                        <li>1 dy = 24 hr</li>
+                        <li>1 dy = 1/7 wk</li>
+                        <li>1 dy = 1/30 mh</li>
+                        <li>1 dy = 1/365 yr</li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-3">
+                    <h5 style="color:white">Weeks</h5>
+                    <ul style="color: aliceblue;">
+                        <li>1 wk = 6.048e14 ns</li>
+                        <li>1 wk = 6.048e11 μs</li>
+                        <li>1 wk = 6.048e8 ms</li>
+                        <li>1 wk = 6.048e7 cs</li>
+                        <li>1 wk = 6.048e6 ds</li>
+                        <li>1 wk = 6.048e5 s</li>
+                        <li>1 wk = 10080 min</li>
+                        <li>1 wk = 168 hr</li>
+                        <li>1 wk = 7 dy</li>
+                        <li>1 wk = 1/4.3 mh</li>
+                        <li>1 wk = 1/52 yr</li>                    
+                    </ul>
+                </div>
+    
+    
+                <div class="col-md-3">
+                    <h5 style="color:white">Months</h5>
+                    <ul style="color: aliceblue;">
+                        <li>1 mh = 2.592e15 ns</li>
+                        <li>1 mh = 2.592e12 μs</li>
+                        <li>1 mh = 2.592e9 ms</li>
+                        <li>1 mh = 2.592e8 cs</li>
+                        <li>1 mh = 2.592e7 ds</li>
+                        <li>1 mh = 6.048e6 s</li>
+                        <li>1 mh = 43200 min</li>
+                        <li>1 mh = 7200 hr</li>
+                        <li>1 mh = 30 dy</li>
+                        <li>1 mh = 4.287 wk</li>
+                        <li>1 mh = 1/12 yr</li> 
+                    </ul>   
+                </div>
+
+                <div class="col-md-3">
+                    <h5 style="color:white">Years</h5>
+                    <ul style="color: aliceblue;">
+                        <li>1 yr = 3.1536e16 ns</li>
+                        <li>1 yr = 3.1536e16 μs</li>
+                        <li>1 yr = 3.1536e16 ms</li>
+                        <li>1 yr = 3.1536e16 cs</li>
+                        <li>1 yr = 3.1536e16 ds</li>
+                        <li>1 yr = 31536000 s</li>
+                        <li>1 yr = 525600 min</li>
+                        <li>1 yr = 8760 hr</li>
+                        <li>1 yr = 365 dy</li>
+                        <li>1 yr = 52 wk</li>
+                        <li>1 yr = 12 mh</li>                    </ul>   
+                </div>
+    
+            </div>
+          </div>
+                </section>
+    
+                <section id="Currency_Converter" class="converterSectionDetails bg-dark heightConverterDetail shadowForElements">
+                    <h1 class="converterTitleDetails">Currency Converter</h1>
+                    <div class="container text-center" id="currencyConverterDiv">
+                        <div class="row justify-content-center">
+                            <div class="col-xxl-4">
+                                <div class="input-group input-group-md">
+                                    
+                                    <select class="selectorsConverters bg-info text-white" id="selectCurrency" for="placeCurrencyAmount">
+                                        <option value="AED">AED</option>
+                                        <option value="ARS">ARS</option>
+                                        <option value="AUD">AUD</option>
+                                        <option value="BGN">BGN</option>
+                                        <option value="BRL">BRL</option>
+                                        <option value="BSD">BSD</option>
+                                        <option value="CAD">CAD</option>
+                                        <option value="CHF">CHF</option>
+                                        <option value="CLP">CLP</option>
+                                        <option value="CNY">CNY</option>
+                                        <option value="COP">COP</option>
+                                        <option value="CZK">CZK</option>
+                                        <option value="DKK">DKK</option>
+                                        <option value="DOP">DOP</option>
+                                        <option value="EGP">EGP</option>
+                                        <option value="EUR">EUR</option>
+                                        <option value="FJD">FJD</option>
+                                        <option value="GBP">GBP</option>
+                                        <option value="GTQ">GTQ</option>
+                                        <option value="HKD">HKD</option>
+                                        <option value="HRK">HRK</option>
+                                        <option value="HUF">HUF</option>
+                                        <option value="IDR">IDR</option>
+                                        <option value="ILS">ILS</option>
+                                        <option value="INR">INR</option>
+                                        <option value="ISK">ISK</option>
+                                        <option value="JPY">JPY</option>
+                                        <option value="KRW">KRW</option>
+                                        <option value="KZT">KZT</option>
+                                        <option value="MXN">MXN</option>
+                                        <option value="MYR">MYR</option>
+                                        <option value="NOK">NOK</option>
+                                        <option value="NZD">NZD</option>
+                                        <option value="PAB">PAB</option>
+                                        <option value="PEN">PEN</option>
+                                        <option value="PHP">PHP</option>
+                                        <option value="PKR">PKR</option>
+                                        <option value="PLN">PLN</option>
+                                        <option value="PYG">PYG</option>
+                                        <option value="RON">RON</option>
+                                        <option value="RUB">RUB</option>
+                                        <option value="SAR">SAR</option>
+                                        <option value="SEK">SEK</option>
+                                        <option value="SGD">SGD</option>
+                                        <option value="THB">THB</option>
+                                        <option value="TRY">TRY</option>
+                                        <option value="TWD">TWD</option>
+                                        <option value="UAH">UAH</option>
+                                        <option value="USD" selected>USD</option>
+                                        <option value="UYU">UYU</option>
+                                        <option value="VEF">VEF</option>
+                                    </select>
+                                    
+                                    <input type="number" placeholder="Enter Amount" id="placeCurrencyAmount" class="form-control text-white converterInputBoxes" required onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))">
+                                    
+                                    <button class="input-group-text converterButtons" id="currencyConverterSwapButton">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right currencySVGImage" viewBox="0 0 16 16">
+                                            <path fill="white" fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                                        </svg>
+                                  </button>
+                                  
+                                    <input type="number" placeholder="Result" id="currencyResult" class="form-control  text-white converterInputBoxes" readonly>
+                                   
+                                    <select class="selectorsConverters bg-info text-white" id="selectCurrencyResultType" for="currencyResult">
+                                        <option value="AED">AED</option>
+                                        <option value="ARS">ARS</option>
+                                        <option value="AUD">AUD</option>
+                                        <option value="BGN">BGN</option>
+                                        <option value="BRL">BRL</option>
+                                        <option value="BSD">BSD</option>
+                                        <option value="CAD">CAD</option>
+                                        <option value="CHF">CHF</option>
+                                        <option value="CLP">CLP</option>
+                                        <option value="CNY">CNY</option>
+                                        <option value="COP">COP</option>
+                                        <option value="CZK">CZK</option>
+                                        <option value="DKK">DKK</option>
+                                        <option value="DOP">DOP</option>
+                                        <option value="EGP">EGP</option>
+                                        <option value="EUR">EUR</option>
+                                        <option value="FJD">FJD</option>
+                                        <option value="GBP">GBP</option>
+                                        <option value="GTQ">GTQ</option>
+                                        <option value="HKD">HKD</option>
+                                        <option value="HRK">HRK</option>
+                                        <option value="HUF">HUF</option>
+                                        <option value="IDR">IDR</option>
+                                        <option value="ILS">ILS</option>
+                                        <option value="INR">INR</option>
+                                        <option value="ISK">ISK</option>
+                                        <option value="JPY">JPY</option>
+                                        <option value="KRW">KRW</option>
+                                        <option value="KZT">KZT</option>
+                                        <option value="MXN">MXN</option>
+                                        <option value="MYR">MYR</option>
+                                        <option value="NOK">NOK</option>
+                                        <option value="NZD">NZD</option>
+                                        <option value="PAB">PAB</option>
+                                        <option value="PEN">PEN</option>
+                                        <option value="PHP">PHP</option>
+                                        <option value="PKR">PKR</option>
+                                        <option value="PLN">PLN</option>
+                                        <option value="PYG">PYG</option>
+                                        <option value="RON">RON</option>
+                                        <option value="RUB">RUB</option>
+                                        <option value="SAR">SAR</option>
+                                        <option value="SEK">SEK</option>
+                                        <option value="SGD">SGD</option>
+                                        <option value="THB">THB</option>
+                                        <option value="TRY">TRY</option>
+                                        <option value="TWD">TWD</option>
+                                        <option value="UAH">UAH</option>
+                                        <option value="USD" selected>USD</option>
+                                        <option value="UYU">UYU</option>
+                                        <option value="VEF">VEF</option>
+                                    </select>
+                                  
+                                </div>
+                            </div>
+                            <button id="currencyConverterButton" class=" btn d-flex justify-content-center bg-info text-white" style="width: 20%; border: none; border-radius: 0.3rem; margin-top: 0.8rem">Convert</button>
+                        </div>
+                    </div>
+
+                    <div class="container mt-4 d-column" style="margin: 0 auto;">
+                        <div class="row">
+                            <ul style="color: aliceblue;" class="currencyText">
+                                
+                                <li><img alt="AED Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fc%2Fcb%2FFlag_of_the_United_Arab_Emirates.svg%2F1200px-Flag_of_the_United_Arab_Emirates.svg.png&f=1&nofb=1&ipt=b1fe245764c12f982e53817aa1e20ffed53af2edb692d2d70c700513e872612b&ipo=images"> AED: Arab Emirates Dirham</li>
+                                <li><img alt="ARS Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F250000%2Fvelka%2Fargentina-flag.jpg&f=1&nofb=1&ipt=5ffdce1b3b1c7bc2f4ed7d48338cf02348fdbc46c6ef288a1d255b347da6b328&ipo=images"> ARS: Argentine Peso</li>
+                                <li><img alt="AUD Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwonderfulengineering.com%2Fwp-content%2Fuploads%2F2015%2F07%2FAustralia-Flag-21.jpg&f=1&nofb=1&ipt=ff09fde80b1d5486ea2ca4c01ca8a3f96c2e82f025ef00bec3105e59667a5136&ipo=images"> AUD: Australian Dollar</li>
+                                <li><img alt="BGN Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpixelz.cc%2Fwp-content%2Fuploads%2F2018%2F11%2Fbulgaria-flag-uhd-4k-wallpaper.jpg&f=1&nofb=1&ipt=bf024f811b7c0b4775c73a71f96bd1128df6128217bb9c3df54ca29960464616&ipo=images"> BGN: Bulgarian Lev</li>
+                                <li><img alt="BRL Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffree.clipartof.com%2F53-Free-Bandeira-Do-Brasil-Flag-Of-Brazil-Clipart-Illustration.jpg&f=1&nofb=1&ipt=0e7726ea13b63d05e07898e0b9e4ccbfe3b0e3c1f3f6dcd422b46c730761c3f4&ipo=images"> BRL: Brazilian Real</li>
+                                <li><img alt="BSD Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fflagpedia.net%2Fdata%2Fflags%2Fw1600%2Fbs.png&f=1&nofb=1&ipt=db0d27e61850f698a58b6221879b893ee5897d06158658228e025224cc395dab&ipo=images"> BSD: Bahamian Dollar</li>
+                                <li><img alt="CAD Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.worldatlas.com%2Fimg%2Fflag%2Fca-flag.jpg&f=1&nofb=1&ipt=96bdb14f22958f7f179c76b9c1c72760f37ded5d751a3db07f5d6dc58ea5065f&ipo=images"> CAD: Canadian Dollar</li>
+                                <li><img alt="CHF Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fontarioflagandpole.com%2Fwp-content%2Fuploads%2F2017%2F10%2Fswitzerland_texture.gif&f=1&nofb=1&ipt=93c98c53201318e7c62d6a0d10a7b28cab59b3591c247d493cfbcb057459b4a1&ipo=images"> CHF: Swiss Franc</li>
+                                <li><img alt="CLP Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpixelz.cc%2Fwp-content%2Fuploads%2F2018%2F11%2Fchile-flag-uhd-4k-wallpaper.jpg&f=1&nofb=1&ipt=a6b5dc9419098d48a6e0a560776382d89e63e8813fa36b1d40eade949bb66a06&ipo=images"> CLP: Chilean Peso</li>
+                                <li><img alt="CNY Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-UzuUsSjP9bQ%2FTa5ERQOoOAI%2FAAAAAAAAAAQ%2F_653LZlNx0k%2Fs1600%2FFlag_of_China.png&f=1&nofb=1&ipt=e8f85c3916ae0c9924db2c108a1f228e2b4d0d4c81ea4d5fe8190f603992750d&ipo=images"> CNY: Chinese Yuan</li>
+                                <li><img alt="COP Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fcolombia-flag-vibrant-2ojuquqg277yydng.jpg&f=1&nofb=1&ipt=80bf5afe2b2ff5fca42eeb0fd6eb530119906d143e5f7d13f9e3e5b6a63a79eb&ipo=images"> COP: Colombian Peso</li>
+                                
+                                <li><img alt="CZK Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fs1.bwallpapers.com%2Fwallpapers%2F2014%2F05%2F29%2Fczech-republic-flag_12125166.jpg&f=1&nofb=1&ipt=7433e76f90c9a516ebbccc44e14067c9e4296cc69f157aabc9c1b371d9f832c3&ipo=images"> CZK: Czech Koruna</li>
+                                <li><img alt="DKK Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.flagsexpo.com%2Fmain%2FUpload%2FImages%2FDenmark-Official-Government-Flags_206_F.jpg%3Fim%3D7933bb49-feba-4963-aabb-517eff8d7132&f=1&nofb=1&ipt=4bd6843087ad80d0df99723b582d1901ea0175ff97340dfbd8957b52739aba0d&ipo=images"> DKK: Danish Krone</li>
+                                <li><img alt="DOP Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fflagpedia.net%2Fdata%2Fflags%2Fultra%2Fdo.png&f=1&nofb=1&ipt=42ee44a2824416ad1c666333bd82382885e64c709d7bb953337af75c17c9d85d&ipo=images"> DOP: Dominican Peso</li>
+                                <li><img alt="EGP Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.theflagman.co.uk%2Fwp-content%2Fuploads%2F2017%2F03%2Fflag-of-Egypt.jpg&f=1&nofb=1&ipt=6888fafe1c24882a1253ab8e2f254edb043c7c90ef38d93f9a0f5136a693674b&ipo=images"> EGP: Egyptian Pound</li>
+                                <li><img alt="EUR Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcontemporaryhistoryusj.files.wordpress.com%2F2011%2F12%2Feu_flag.jpg&f=1&nofb=1&ipt=6e9cd76f2a162c823ff5115bfe16364ec2ef7a57bea39eb8dce8d6d5501c3f47&ipo=images"> EUR: Euro</li>
+                                <li><img alt="FJD Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fflaglane.com%2Fdownload%2Ffijian-flag%2Ffijian-flag-large.jpg&f=1&nofb=1&ipt=ad8aacae9031ca9e8aad7cf8f32494a407bb206181aa59d9ec44c47144dac868&ipo=images"> FJD: Fijian Dollar</li>
+                                <li><img alt="GBP Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.freeimages.com%2Fimages%2Flarge-previews%2Ffb0%2Fuk-flag-1444045.jpg&f=1&nofb=1&ipt=24624fa321dd7621f00c322859a0460457f303d20362d919df19d03650c8f6b4&ipo=images"> GBP: British Pound</li>
+                                <li><img alt="GTQ Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.britannica.com%2F13%2F7213-004-FFC58C1D%2FFlag-Guatemala.jpg&f=1&nofb=1&ipt=2e08c1fae9576230c1f6e595db7b1dfe50b0bafbef06b41f87657bcc74a15dbe&ipo=images"> GTQ: Guatemalan Quetzal</li>
+                                <li><img alt="HKD Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.countryflags.com%2Fwp-content%2Fuploads%2Fhongkong-flag-jpg-xl.jpg&f=1&nofb=1&ipt=8d569fd7ab6c9fe67fc7d7fc2c8a0a576e21f45930ce316998066087a0114adb&ipo=images"> HKD: Hong Kong Dollar</li>
+                                <li><img alt="HRK Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.webshopapp.com%2Fshops%2F94414%2Ffiles%2F52378772%2Fflag-of-croatia.jpg&f=1&nofb=1&ipt=97ffd55642b1c467d8f358946a20ec76a97a3760ddbc2fbc8697ecbeb381d9ce&ipo=images"> HRK: Croatian Kuna</li>
+                                <li><img alt="HUF Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fflagpedia.net%2Fdata%2Fflags%2Fw1600%2Fhu.png&f=1&nofb=1&ipt=968cce06c06d99a4b5fe9bff1da302cc13a23591ab67418d0ab44a6d0d2ccbec&ipo=images"> HUF: Hungarian Forint</li>
+                                
+                                <li><img alt="IDR Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.worldatlas.com%2Fr%2Fw1200-h701-c1200x701%2Fupload%2F9f%2F69%2F0a%2Fid-flag.jpg&f=1&nofb=1&ipt=66bef8ab2440d117246f65891b380fe5f7b588bdd6d0b5b4d682d302c396147e&ipo=images"> IDR: Indonesian Rupiah</li>                                
+                                <li><img alt="ILS Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fshowsupportforhersoldiers.files.wordpress.com%2F2012%2F11%2Fisraeli-flag.png&f=1&nofb=1&ipt=2cc5e37f2b2d7837b5478d3682457f3023a8b2f04221fd6bec51c6df2539811c&ipo=images"> ILS: Israeli Shekel</li>
+                                <li><img alt="INR Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fbc%2FFlag_of_India.png&f=1&nofb=1&ipt=2ec967f10c36435e5dad4da1ddea4fcb0965d530c69ff8c5a1d11fd8368b8f60&ipo=images"> INR: Indian Rupee</li>
+                                <li><img alt="ISK Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgeo5.net%2Fimagens%2Fbandeira-da-islandia-2000px.png&f=1&nofb=1&ipt=2ba79194c7bb3a071065e81d1e88e363cdeb8d6ae4b7ed82a6bf7a2cc5536fce&ipo=images"> ISK: Icelandic Krona</li>
+                                <li><img alt="JPY Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Fthumb%2F9%2F9e%2FFlag_of_Japan.svg%2F1200px-Flag_of_Japan.svg.png&f=1&nofb=1&ipt=1bfc6038c024d17d94b3d826b08a661db9b54fdd71abaeda53f901870b2a09e1&ipo=images"> JPY: Japanese Yen</li>
+                                <li><img alt="KRW Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.theculturetrip.com%2Fwp-content%2Fuploads%2F2017%2F02%2Fflag_of_south_korea-svg_.png&f=1&nofb=1&ipt=46cc8daf50527d3b861ec751c2124515e03f43727d76d8a09782be0f8a34237c&ipo=images"> KRW: South Korean Won</li>
+                                <li><img alt="KZT Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fflagsweb.com%2Fimages%2FPNG%2FFlag_of_Kazakhstan.png&f=1&nofb=1&ipt=0ff77cb8211b8872b8d0f635926cdc191c7a1925289b9cd12116848b52a1a068&ipo=images"> KZT: Kazakhstani Tenge</li>
+                                <li><img alt="MXN Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F17%2FFlag_of_Mexico.png&f=1&nofb=1&ipt=8c74c7cd7b61dc9c32ef0b05ddbeabcc579843ea2a91bca98408fd80f736cb57&ipo=images"> MXN: Mexican Peso</li>
+                                <li><img alt="MYR Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F6%2F66%2FFlag_of_Malaysia.svg%2F2800px-Flag_of_Malaysia.svg.png&f=1&nofb=1&ipt=5d3c2849703f98439b615b2ef6cd2a255182a8253f8249fbe60fba56bd4d9b88&ipo=images"> MYR: Malaysian Ringgit</li>
+                                <li><img alt="NOK Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F1093948.jpg&f=1&nofb=1&ipt=f1090ddc4e2b97b9a821ba8ebd1a40c3203085e12ad757a4dbe2c3b76f573e8e&ipo=images"> NOK: Norwegian Krone</li>
+                                <li><img alt="NZD Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flibertyflagandbanner.com%2Fwp-content%2Fuploads%2F2015%2F08%2Fnew-zealand-flag.jpg&f=1&nofb=1&ipt=96b8dd1409bac4f6805d7e89a2d721811a560bea01e5e1895a1603c45649d76d&ipo=images"> NZD: New Zealand Dollar</li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <ul style="color: aliceblue;" class="currencyText2">
+                                
+                                <li><img alt="PAB Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.theflagman.co.uk%2Fwp-content%2Fuploads%2F2017%2F03%2Fflag-of-Panama.jpg&f=1&nofb=1&ipt=67ed7ff036c451ba1a8b8164c75981b1a50c6fc071a323480024b571cd52671a&ipo=images"> PAB: Panamanian Balboa</li>
+                                <li><img alt="PEN Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fs1.bwallpapers.com%2Fwallpapers%2F2014%2F05%2F29%2Fperu-flag_121357416.jpg&f=1&nofb=1&ipt=190618fd82f6ee0b66e3b1d653baad26c6b7dfa15b353f032da1c1a76cb4ad5c&ipo=images"> PEN: Peruvian Sol</li>
+                                <li><img alt="PHP Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.medianigeria.com%2Fwp-content%2Fuploads%2F2018%2F02%2FPhilippines-Flag-1067x534.png&f=1&nofb=1&ipt=9828b4cebb19589d05ca7a4d9537b633437602290b998ad85136d9ecf4f77a8d&ipo=images"> PHP: Philippine Peso</li>
+                                <li><img alt="PKR Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F114%2F048%2Foriginal%2Ffree-vector-pakistan-flag.jpg&f=1&nofb=1&ipt=ccae258fe45e75daea82027d6f2b3679b9668dddc40e5e9332e543f9d496de9b&ipo=images"> PKR: Pakistani Rupee</li>
+                                <li><img alt="PLN Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.6sciLZmCViT0wBvnIymLIQHaEo%26pid%3DApi&f=1&ipt=4039e8ceb8305f76f0319e4cc9b58087e743f368ef73441b293c88425c15860c&ipo=images"> PLN: Polish Zloty</li>
+                                <li><img alt="PYG Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fs1.bwallpapers.com%2Fwallpapers%2F2014%2F05%2F29%2Fparaguay-flag_121356794.gif&f=1&nofb=1&ipt=5a93448e3b018e6cb7bcfc7b0d4e8002e44482610947355247493fea2793fcbd&ipo=images"> PYG: Paraguayan Guarani</li>
+                                <li><img alt="RON Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.theflagman.co.uk%2Fwp-content%2Fuploads%2F2017%2F03%2Fflag-of-Romania.jpg&f=1&nofb=1&ipt=0a4ab9a8a481f8df63a2c80ff5c3319301efe0d30f38916b0e7c7cf240c9c19d&ipo=images"> RON: Romanian Leu</li>
+                                <li><img alt="RUB Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F250000%2Fvelka%2Frussian-flag-151947920021T.jpg&f=1&nofb=1&ipt=dc3bee50851a9b49347bdacce210e5e88a608a5aec4aae02b68c13cff7a7dbbc&ipo=images"> RUB: Russian Ruble</li>
+                                <li><img alt="SAR Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.britannica.com%2F79%2F5779-050-46C999AF%2FFlag-Saudi-Arabia.jpg&f=1&nofb=1&ipt=f0bffec4d769ec59c374709b4d8e5b1a3d37b284ed114d791c568f5ca1e38636&ipo=images"> SAR: Saudi Riyal</li>
+                                <li><img alt="SEK Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F250000%2Fvelka%2Fsweden-flag.jpg&f=1&nofb=1&ipt=d38f582a40af08a8c471d40a4e70770e3b899a92eb80ddef14cb500b1d870d4e&ipo=images"> SEK: Swedish Krona</li>
+                                <li><img alt="SGD Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.worldatlas.com%2Fupload%2F25%2Fbf%2F7e%2Fshutterstock-523172842.jpg&f=1&nofb=1&ipt=cbf7ddf6eaf1a244a9ad4035be6d94fc03ebbf20ba71e8a7d371407c81db81d8&ipo=images"> SGD: Singapore Dollar</li>
+
+                                <li><img alt="THB Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstatic4.wikia.nocookie.net%2F__cb20130504133947%2Fcso%2Fimages%2F3%2F33%2FThailand_flag.png&f=1&nofb=1&ipt=594cc88fa6bffe1a1119e765584f280bfd3d43ff1b5879f1938454e63f4e1ec9&ipo=images"> THB: Thai Baht</li>
+                                <li><img alt="TRY Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-2aN3nsMhB80%2FTwYwwXpDQZI%2FAAAAAAAA7Po%2FOC3HXKQbjSk%2Fs1600%2FTurkey_Flag.gif&f=1&nofb=1&ipt=a07270c1dcaed23d28c172a10333856661c6876c787957558d954f4f5189901b&ipo=images"> TRY: Turkish Lira</li>
+                                <li><img alt="TWD Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.worldatlas.com%2Fupload%2F1d%2Faf%2F09%2Fshutterstock-478583230.jpg&f=1&nofb=1&ipt=9ae89763d4175cb4c27970c10dc89af6171572df8a7cd4f32101f4dab7e805ab&ipo=images"> TWD: New Taiwan Dollar</li>
+                                <li><img alt="UAH Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.britannica.com%2F14%2F4814-004-7C0DF1BB%2FFlag-Ukraine.jpg&f=1&nofb=1&ipt=9fa6182d7f6d8b7da5c5b36919134ced40f422e23b36b2a0a3affe2c3132804f&ipo=images"> UAH: Ukrainian Hryvnia</li>
+                                <li><img alt="USD Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F532%2F212%2Foriginal%2Fvector-united-states-of-america-flag-usa-flag-america-flag-background.jpg&f=1&nofb=1&ipt=bc6d0a20bb974835336d722da81d72efe02923b19872adbc367f9861fb2124c7&ipo=images"> USD: United States Dollar</li>
+                                <li><img alt="UYU Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fa-z-animals.com%2Fmedia%2F2022%2F12%2Fnational-flag-of-uruguay-with-sun-of-may.jpg_s1024x1024wisk20cEiJCmCZyuZ0nsb2fJ_RotbK8Q0RNXHjnkRZK_Q1uGME-1024x614.jpg&f=1&nofb=1&ipt=753fa3ff1f734697107a8cfc24444838b18c931040c51cc1a20380027c22e37f&ipo=images"> UYU: Uruguayan Peso</li>
+                                <li><img alt="VEF Flag" class="currencyFlags" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp4209041.jpg&f=1&nofb=1&ipt=8673bcee723faa7770875e0f25a956152e4417f0c77f7f9609a27b02693ba38b&ipo=images"> VEF: Venezuelan Bolivar</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+    
+                <section id="Weight_Converter" class="converterSectionDetails bg-dark heightConverterDetail shadowForElements">
+                    <h1 class="converterTitleDetails">Weight Converter</h1>
+                    <div class="container text-center" id="weightConverterDiv">
+                        <div class="row justify-content-center">
+                            <div class="col-xxl-4">
+                                <div class="input-group input-group-md">
+                                    <select class="selectorsConverters bg-info text-white" id="selectWeight" for="chosenWeight">
+                                        <option value="microGr">Micrograms</option>
+                                        <option value="miliGr">Miligrams</option>
+                                        <option value="oz">Ounces</option>
+                                        <option value="Gr">Grams</option>
+                                        <option value="lbs">Pounds</option>
+                                        <option value="kg">Kilograms</option>
+                                        <option value="ton">Tons</option>                        
+                                    </select>
+                                    
+                                    <input type="number" placeholder="Enter Amount" id="chosenWeight" class="form-control text-white converterInputBoxes" required onkeypress="return (event.charCode != 8 && event.charCode == 0 || (event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))">
+                                    
+                                    <button class="converterButtons" id="weightConverterButton">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                                            <path fill="white" fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                                        </svg>
+                                    </button>
+                                    
+                                    <input type="number" placeholder="Result" id="weightResult" class="form-control text-white converterInputBoxes" readonly>
+                                    
+                                    <select class="selectorsConverters bg-info text-white" id="typeOfWeightResult" for="weightResult">
+                                        <option value="microGr">Micrograms</option>
+                                        <option value="miliGr">Miligrams</option>
+                                        <option value="oz">Ounces</option>
+                                        <option value="Gr">Grams</option>
+                                        <option value="lbs">Pounds</option>
+                                        <option value="kg">Kilograms</option>
+                                        <option value="ton">Tons</option>                        
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container mt-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color:white">Micrograms</h5>
+                                <ul style="color: aliceblue;">
+                                    <li>1 µg = 0.001 mg</li>
+                                    <li>1 µg = 3.5274e-8 oz</li>
+                                    <li>1 µg = 0.000001 g</li>
+                                    <li>1 µg = 2.2046e-9 lb</li>
+                                    <li>1 µg = 1e-9 kg</li>
+                                    <li>1 µg = 1e-12 t</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color:white">Milligrams</h5>
+                                <ul style="color: aliceblue;">
+                                    <li>1 mg = 1000 µg</li>
+                                    <li>1 mg = 3.5274e-5 oz</li>
+                                    <li>1 mg = 0.001 g</li>
+                                    <li>1 mg = 2.2046e-6 lb</li>
+                                    <li>1 mg = 1e-6 kg</li>
+                                    <li>1 mg = 1e-9 t</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color:white">Ounces</h5>
+                                <ul style="color: aliceblue;">
+                                    <li>1 oz = 28349.5 μg</li>
+                                    <li>1 oz = 28.3495 mg</li>
+                                    <li>1 oz = 0.0283495 g</li>
+                                    <li>1 oz = 0.0625 lb</li>
+                                    <li>1 oz = 0.0283495 kg</li>
+                                    <li>1 oz = 2.83495e-5 t</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-4">
+                                <h5 style="color:white">Grams</h5>
+                                <ul style="color: aliceblue;">
+                                    <li>1 g = 1000000 μg</li>
+                                    <li>1 g = 1000 mg</li>
+                                    <li>1 g = 0.0352739619 oz</li>
+                                    <li>1 g = 0.00220462262 lb</li>
+                                    <li>1 g = 0.001 kg</li>
+                                    <li>1 g = 1e-6 t</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color:white">Pounds</h5>
+                                <ul style="color: aliceblue;">
+                                    <li>1 g = 453592370 μg</li>
+                                    <li>1 g = 453.59237 mg</li>
+                                    <li>1 g = 16 oz</li>
+                                    <li>1 g = 453.59237 g</li>
+                                    <li>1 g = 0.45359237 kg</li>
+                                    <li>1 g = 4.54e-4 t</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color:white">Kilograms</h5>
+                                <ul style="color: aliceblue;">
+                                    <li>1 kg = 1e6 μg</li>
+                                    <li>1 kg = 1e3 mg</li>
+                                    <li>1 kg = 35.27396 oz</li>
+                                    <li>1 kg = 1000 g</li>
+                                    <li>1 kg = 2.20462 kg</li>
+                                    <li>1 kg =0.001 t</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-4">
+                                <h5 style="color:white">Ton</h5>
+                                <ul style="color: aliceblue;">
+                                    <li>1 t = 1e12 μg</li>
+                                    <li>1 t = 1e9 mg</li>
+                                    <li>1 t = 35273.96 oz</li>
+                                    <li>1 t = 1e6 g</li>
+                                    <li>1 t = 2,204.62 lb</li>
+                                    <li>1 t = 1,000 kg</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </section>
+    
+                <section id="Temperature_Converter" class="converterSectionDetails bg-dark heightConverterDetail shadowForElements">
+                    <h1 class="converterTitleDetails">Temperature Converter</h1>
+                    <div class="container text-center" id="temperatureConverterDiv">
+                        <div class="row justify-content-center">
+                            <div class="col-xxl-4">
+                                <div class="input-group input-group-md">
+                                    
+                                    <select class="selectorsConverters bg-info text-white" id="selectTemperature" for="chosenTemperature">
+                                        <option value="C">Celsius</option>
+                                        <option value="F">Farenheit</option>
+                                        <option value="K">Kelvin</option>                       
+                                    </select>
+                                    
+                                    <input type="number" placeholder="Place Number" id="chosenTemperature" class="form-control text-white converterInputBoxes" required onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))">
+                                    
+                                    <button class="converterButtons" id="temperatureConverterButton">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                                            <path fill="white" fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                                        </svg>
+                                    </button>
+                                  
+                                    <input type="number" placeholder="Result" id="temperatureResult" class="form-control text-white converterInputBoxes" readonly>
+                                   
+                                    <select class="selectorsConverters bg-info text-white" id="typeOfTemperatureResult" for="temperatureResult">
+                                        <option value="C">Celsius</option>
+                                        <option value="F">Farenheit</option>
+                                        <option value="K">Kelvin</option>                        
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container mt-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5 style="color:white">Celsius</h5>
+                                <ul style="color: aliceblue;">
+                                    <li>1 C° = 33.80 F° </li>
+                                    <li>1 C° = 274.15 K° </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color:white">Farenheit</h5>
+                                <ul style="color: aliceblue;">
+                                    <li>1 F° = -17.22 C° </li>
+                                    <li>1 F° = 255.93 K° </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h5 style="color:white">Kelvin</h5>
+                                <ul style="color: aliceblue;">
+                                    <li>1 K° = -272.15 C° </li>
+                                    <li>1 K° = -457.87 F° </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+          
+                <section id="Radian/Deegree_Converter" class="converterSectionDetails bg-dark heightConverterDetail shadowForElements">
+                  <h1 id="Radian/DegreeTitle" class="converterTitleDetails"> Radian / Degree Converter</h1>
+                  <div class="container text-center">
+                      <div class="row justify-content-center">
+                          <div class="col-xxl-4">
+                              <div class="input-group input-group-md">
+                                  
+                                  <select class="selectorsConverters bg-info text-white" id="assignDegRadUnit" for="placeDegRadNumber">
+                                      <option value="choseDegrees">Degrees</option>
+                                      <option value="choseRadians">Radians</option>                        
+                                  </select>
+                                  
+                                  <input type="text" placeholder="Place Number" id="placeDegRadNumber" class="form-control text-white converterInputBoxes" required>
+                                  
+                                  <button id="piButton" class="converterButtons">
+                                      π
+                                  </button>
+                                
+                                  <input type="text" placeholder="Result" id="displayDegRadResult" class="form-control text-white converterInputBoxes" readonly>
+                                 
+                                  <select class="selectorsConverters bg-info text-white" id="convertToDegRadUnit" for="displayDegRadResult">
+                                      <option value="choseDegrees">Degrees</option>
+                                      <option value="choseRadians">Radians</option>                        
+                                  </select>
+          
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="container mt-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 style="color:white">Degrees</h5>
+                            <ul style="color: aliceblue;">
+                                <li> Radian *  180/𝜋 </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 style="color:white">Radians</h5>
+                            <ul style="color: aliceblue;">
+                                <li> Degree *  𝜋/180 </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.1.0/math.min.js"></script>
+                </section>
+
+              </main>
+          </div>
+        </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+                <a href="index.html" target="_self" id="navbarTitle" class="navbar-brand text-white">Math Solver PRO</a>
+                <h5 class="mt-2">Juan Matias Leon Lau</h5>
+            </div>
+            <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                <p class="m-0">&copy; 2024 Math Solver PRO. All rights reserved.</p>
+            </div>
+            <div class="col-12 col-md-4 text-center text-md-end">
+                <a title="Github.com" href="https://github.com/mleon0526" target="_blank" class="text-white me-3"><i class="fa-brands fa-github fa-2x"></i></a>
+                <a title="stackoverflow.com" href="https://stackoverflow.com/users/22128785/matias-leon-lau?tab=profile" target="_blank" class="text-white me-3"><i class="fa-brands fa-stack-overflow fa-2x"></i></a>
+                <a title="gmail.com" href="mailto:matiasleonlau@gmail.com" class="text-white me-3"><i class="fas fa-envelope fa-2x"></i></a>              
+                <a title="linkedin.com" href="https://www.linkedin.com/in/matias-leon-lau-24a026282/" target="_blank" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+        </div>
+    </div>
+  </footer>
+
+ <script src="main.js"></script>
+ <script src="converters.js" defer></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Math Solver Pro</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <nav id="navbar" class="navbar navbar-dark bg-dark sticky-top">
+    <a href="index.html" target="_self" id="navbarTitle" class="navbar-brand">Math Solver PRO</a>
+    <button type="button" class="navbar-toggler" id="navbarButton" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+        <div id="containerNavbar" class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <ul class="navbar-nav">
+                        <a href="index.html" target="_self"><h5 class="navbarCategoriesTitles">Calculators</h5></a>
+                        <li class="nav-item">
+                            <a href="index.html#Scientific_Calculator" class="nav-link text-white">Scientific Calculator</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="index.html#Hypothenuse_Finder" class="nav-link text-white">Hypothenuse Finder</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="index.html#Herons_formula_Finder" class="nav-link text-white">Heron Area Finder</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="index.html#Find_angles_and_sides_of_Triangle_calculator" class="nav-link text-white">Trigonometric Calculator</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="navbar-nav">
+                        <a href="converters.html" target="_self"><h5 class="navbarCategoriesTitles">Converters</h5></a>
+                        
+                        <li class="nav-item">
+                          <a href="converters.html#Length_Converter" class="nav-link text-white">Length Converter</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="converters.html#Time_Converter" class="nav-link text-white">Time Converter</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="converters.html#Currency_Converter" class="nav-link text-white">Currency Converter</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="converters.html#Weight_Converter" class="nav-link text-white">Weight Converter</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="converters.html#Temperature_Converter" class="nav-link text-white">Temperature Converter</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="converters.html#Radian/Deegree_Converter" class="nav-link text-white">Radian/Degree Converter</a>
+                      </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="navbar-nav">
+                        <a href="geometric.html" target="_self"><h5 class="navbarCategoriesTitles">Geometric Finders</h5></a>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white" data-bs-toggle="collapse" data-bs-target="#volumeGeometricCollapse" aria-expanded="false" aria-controls="volumeGeometricCollapse">Volume</a>
+                            <ul class="collapse" id="volumeGeometricCollapse">
+                                <li class="nav-item">
+                                  <a href="geometric.html#volumeofRectangleTitle" class="nav-link text-white">Rectangle</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="geometric.html#volumeofSphereDiv" class="nav-link text-white">Sphere</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="geometric.html#volumeOfCylinderDiv" class="nav-link text-white">Cylinder</a>
+                                </li>
+
+                                <li class="nav-item">
+                                  <a href="geometric.html#volumeOfConeDiv" class="nav-link text-white">Cone</a>
+                              </li>
+                                <li class="nav-item">
+                                  <a href="geometric.html#volumeOfPyramidDiv" class="nav-link text-white">Pyramid</a>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="nav-link text-white" data-bs-toggle="collapse" data-bs-target="#areaGeometricCollapse" aria-expanded="false" aria-controls="areaGeometricCollapse">Area</a>
+                            <ul class="collapse" id="areaGeometricCollapse">
+                              
+                              <li class="nav-item">
+                                <a href="geometric.html#areaOfCricleDiv" class="nav-link text-white">Circle</a>
+                              </li>
+
+                              <li class="nav-item">
+                                <a href="geometric.html#areaOf2DRectangleDiv" class="nav-link text-white">Rectangle</a>
+                              </li>
+
+                              <li class="nav-item">
+                                <a href="geometric.html#areaOfTriangleDiv" class="nav-link text-white">Triangle</a>
+                              </li>
+
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="navbar-nav">
+                        <a href="documentation.html" target="_self"><h5 class="navbarCategoriesTitles">Documentation</h5></a>
+                        <li class="nav-item">
+                          <a href="documentation.html#Trigonometry_and_Geometry" class="nav-link text-white">Trigonometry</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="documentation.html#geometrySectionTitle" class="nav-link text-white">Geometry</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="documentation.html#Algebra" class="nav-link text-white">Algebra</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="documentation.html#Statistics" class="nav-link text-white">Statistics</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="documentation.html#Calculus" class="nav-link text-white">Calculus</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 backgroundImage">
+
+            <main id="mainPage">
+
+              <h1 class="hColor titleDetails" id="mainTitle">Math Solver Pro</h1>
+
+              <div class="d-flex justify-content-center">
+                <p p class="introParagraph">
+                  Welcome to Math Solver Pro, your one-stop destination for all your mathematical needs! Our website offers a wide range of calculators and educational resources designed to help you tackle any math problem with ease. Whether you're looking for a scientific calculator, various unit converters, or geometric calculators, we have the tools you need to make your calculations simple and accurate.
+                  In addition to our comprehensive calculator collection, we provide detailed documentation on key mathematical subjects. Dive into our extensive documentation on calculus, trigonometry, algebra, geometry, and statistics. Each section is crafted to enhance your understanding and support your learning journey, whether you are a student, teacher, or math enthusiast.
+                  Explore Math Solver Pro and discover how we can assist you in mastering mathematics. With our user-friendly tools and informative resources, solving math problems has never been easier. Start exploring now and make the most of our reliable and accessible mathematical solutions. Good Luck !!!
+                </p>
+              </div>
+
+              <h4 class="hColor titleDetails ScientCalcTitle">Scientific Calculator</h4>
+
+              <section id="Scientific_Calculator" class="converterSectionDetails">
+                <input type="text" placeholder="0" id="result" class="shadowForElements">
+                 <div id="divCalculator" class="calculator shadowForElements">
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult('9')">9</button>
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult('8')">8</button>
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult('7')">7</button>
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult('+')">+</button>
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult('6')">6</button>
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult('5')">5</button>
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult('4')">4</button>
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult('-')">-</button>
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult('3')">3</button>
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult('2')">2</button>
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult('1')">1</button>
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult('*')">*</button>
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult('0')">0</button>
+                   <button class="calculatorButtons btn btn-info" onClick="clearResult()">AC</button>
+                   <button class="calculatorButtons btn btn-info" onClick="deleteLastChar()">D</button>
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult('/')">/</button>
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult('(')">(</button>
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult(')')">)</button>
+                   <button class="calculatorButtons btn btn-info" onClick="calculateSquareRoot()" id="squareRootButton">√</button>
+                   <button class="calculatorButtons btn btn-info" onClick="addPi()">π</button>
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult('^')">^</button>
+                   <button class="calculatorButtons btn btn-info" onClick="appendToResult('.')">.</button>
+                   <button class="calculatorButtons btn btn-info" onClick="calculate()">=</button>
+                   <button class="calculatorButtons btn btn-info" onClick="returnPreviousNumber()"><i class="fa-solid fa-rotate-left"></i></button>
+                </div>
+              </section>
+
+              <section id="Hypothenuse_Finder" class="converterSectionDetails">
+                <div class="container-fluid text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div id="hypothenuseDivBody" class="bg-dark shadowForElements">
+                                <h1 class="converterTitleDetails">Hypotenuse Finder</h1>
+                                <form id="formOfInputsHypothenuse">
+                                    <div class="row justify-content-center mb-4">
+                                        <div class="col-sm-12">
+                                            <div class="input-group">
+                                                <div class="input-group-text text-white bg-info hypothenuseInputBorders">A</div>
+                                                <input  type="number" id="boxA" class="form-control text-white">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row justify-content-center mb-4">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <div class="input-group-text text-white bg-info hypothenuseInputBorders">B</div>
+                                                <input type="number" id="boxB" class="form-control text-white">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mb-4">
+                                        <div class="col-md-12">
+                                            <div class="input-group">
+                                                <div class="input-group-text text-white bg-info hypothenuseInputBorders">C</div>
+                                                <input type="number" id="boxC" class="form-control text-white">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-12">
+                                            <button type="button" id="submitButton" class="btn btn-info">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </section>
+            
+              <section id="Herons_formula_Finder" class="converterSectionDetails">
+              <div class="container-fluid text-center">
+                  <div id="heronDivBody" class="bg-dark shadowForElements">
+                      <h1 class="converterTitleDetails">Heron's Area Formula</h1>
+                      <form id="formOfInputsHeron">
+                         
+                          <div class="row justify-content-center heronRowDivs">
+                              <div class="col-sm-12">
+                                  <div class="input-group">
+                                      <div class="input-group-text text-white bg-info heronInputLetterID">A</div>
+                                      <input type="number" id="variableAforHeron" class="form-control text-white heronInputs">
+                                  </div>
+                              </div>
+                          </div>
+      
+                          <div class="row justify-content-center heronRowDivs heronRowDivs">
+                              <div class="col-md-12">
+                                  <div class="input-group">
+                                      <div class="input-group-text text-white bg-info heronInputLetterID">B</div>
+                                      <input type="number" id="variableBforHeron" class="form-control text-white heronInputs">
+                                  </div>
+                              </div>
+                          </div>
+      
+                          <div class="row justify-content-center heronRowDivs heronRowDivs">
+                              <div class="col-md-12">
+                                  <div class="input-group">
+                                      <div class="input-group-text text-white bg-info heronInputLetterID">C</div>
+                                      <input type="number" id="variableCforHeron" class="form-control text-white heronInputs">
+                                  </div>
+                              </div>
+                          </div>
+     
+                          <div class="row justify-content-center heronRowDivs">
+                              <div class="col-md-12">
+                                  <button type="button" id="submitButtonForHeron" class="btn btn-info">Submit</button>
+                              </div>
+                          </div>
+
+                          <div class="row justify-content-center heronRowDivs">
+                            <div class="col-sm-12">
+                                <div class="input-group">
+                                    <div class="input-group-text text-white bg-info heronInputLetterID">S</div>
+                                    <input type="number" id="showSvariableHeron" class="form-control text-white heronInputs" readonly >
+                                </div>
+                            </div>
+                        </div>
+      
+                          <div class="row justify-content-center heronRowDivs">
+                              <div class="col-sm-12">
+                                  <div class="input-group">
+                                      <div class="input-group-text text-white bg-info heronInputLetterID">H</div>
+                                      <input type="number" id="finalResultofHeron" class="form-control text-white heronInputs" readonly>
+                                  </div>
+                              </div>
+                          </div>
+      
+                      </form>
+                  </div>
+              </div>
+              </section>
+
+              <section id="Find_angles_and_sides_of_Triangle_calculator">
+                <div class="container">
+                  <div class="divVolumeDetails volumeBackground bg-dark p-4 d-flex flex-column align-items-center shadowForElements">
+                    <h2 id="findAngSidTriTitle" class="converterTitleDetails GeometricTitles">Right Triangle Calculator</h2>
+                    
+                    <div class="row justify-content-center align-items-center">
+                      
+                      <div class="TrigCalcDivImg1 col-md-4 col-sm-12 mb-4 mb-md-0 bg-white">
+                        <img class="TrigCalcImg1 img-fluid" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgopract.com%2Flayouts%2Fimages%2Fmaths%2FRight-Triangle-Shape.png&f=1&nofb=1&ipt=b026cdc49bd9cc0acfa9170ee619a2e6a5bcef6bcf4db154dd7cd297ad353691&ipo=images" alt="Right Triangle">
+                      </div>
+                      
+                      <div class="col-md-4 col-sm-12 mb-4 mb-md-0">
+                        <div class="d-flex flex-column align-items-center justify-content-between">
+                             
+                           <div class="input-group">
+                               <div class="input-group-text text-white bg-info hypothenuseInputBorders">A</div>
+                               <input class="form-control text-white mb-3 GeometricInputBoxes" type="number" id="angleA">
+                           </div>
+                   
+                           <div class="input-group">
+                               <div class="input-group-text text-white bg-info hypothenuseInputBorders">a</div>
+                               <input class="form-control text-white mb-3 GeometricInputBoxes" type="number" id="sideA">
+                           </div>
+                   
+                           <div class="input-group">
+                               <div class="input-group-text text-white bg-info hypothenuseInputBorders">B</div>
+                               <input class="form-control text-white mb-3 GeometricInputBoxes" type="number" id="angleB">
+                           </div>
+                             
+                           <div class="input-group">
+                               <div class="input-group-text text-white bg-info hypothenuseInputBorders">b</div>
+                               <input class="form-control text-white mb-3 GeometricInputBoxes" type="number" id="sideB">
+                           </div>
+                                                
+                           <div class="input-group">
+                               <div class="input-group-text text-white bg-info hypothenuseInputBorders">c</div>
+                               <input class="form-control text-white mb-3 GeometricInputBoxes" type="number" id="sideC">
+                           </div>
+                             
+                           <button class="btn btn-info flex-grow-1" type="button" id="trigonometricCalculatorButton" onclick="calculateTrigonometricValues()">Submit</button>
+                       
+                        </div>
+                       </div>
+              
+                      <div class="TrigCalcDivImg2 col-md-4 col-sm-12">
+                        <img class="TrigCalcImg2 img-fluid" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage2.slideserve.com%2F3925011%2Fsix-trig-ratios-of-l.jpg&f=1&nofb=1&ipt=ce44c05e2dad72c53ec403ab73c6f9bd894d6676654bcc86b1383419e9ef3f90&ipo=images" alt="Formulas for Right Triangle">
+                      </div>
+              
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="law_Of_Sine_Triangle_Calculator">
+                <div class="container">
+                  <div class="divVolumeDetails volumeBackground bg-dark p-4 d-flex flex-column align-items-center shadowForElements">
+                    <h2 id="lawOfSineCalculator" class="converterTitleDetails GeometricTitles">Law of Sine Triangle Calculator</h2>
+                    
+                    <div class="row justify-content-center align-items-center">
+                      
+                      <div class="TrigCalcDivImg1 col-md-4 col-sm-12 mb-4 mb-md-0 bg-white">
+                        <img class="TrigCalcImg1 img-fluid" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kindpng.com%2Fpicc%2Fm%2F168-1687035_triangle-abc-real-life-non-right-angled-triangles.png&f=1&nofb=1&ipt=0dff25655a7052dceb67f59bd317aefbfa4180e98e61f2c4fa873eee8a0ff300&ipo=images" alt="Right Triangle">
+                      </div>
+                      
+                      <div class="col-md-4 col-sm-12 mb-4 mb-md-0">
+                        <div class="d-flex flex-column align-items-center justify-content-between">
+                          
+                          <div class="input-group">
+                            <div class="input-group-text text-white bg-info hypothenuseInputBorders">A</div>
+                            <input class="form-control text-white mb-3 GeometricInputBoxes" type="number" id="angleASine">
+                          </div>
+
+                          <div class="input-group">
+                            <div class="input-group-text text-white bg-info hypothenuseInputBorders">a</div>
+                            <input class="form-control text-white mb-3 GeometricInputBoxes" type="number" id="sideASine">
+                          </div>
+
+                          <div class="input-group">
+                            <div class="input-group-text text-white bg-info hypothenuseInputBorders">B</div>
+                            <input class="form-control text-white mb-3 GeometricInputBoxes" type="number" id="angleBSine">
+                          </div>
+                          
+                          <div class="input-group">
+                            <div class="input-group-text text-white bg-info hypothenuseInputBorders">b</div>
+                            <input class="form-control text-white mb-3 GeometricInputBoxes" type="number" id="sideBSine">
+                          </div>
+                          
+                          <div class="input-group">
+                            <div class="input-group-text text-white bg-info hypothenuseInputBorders">C</div>
+                            <input class="form-control text-white mb-3 GeometricInputBoxes" type="number" id="angleCSine">
+                          </div>
+
+                          <div class="input-group">
+                            <div class="input-group-text text-white bg-info hypothenuseInputBorders">c</div>
+                            <input class="form-control text-white mb-3 GeometricInputBoxes" type="number" id="sideCSine">
+                          </div>
+                          
+                          <button class="btn btn-info flex-grow-1" type="button" id="lawOfSineCalculatorButton" onclick="calculateSineValues()">Submit</button>
+                        </div>
+                      </div>
+              
+                      <div class="TrigCalcDivImg2 col-md-4 col-sm-12">
+                        <img class="TrigCalcImg2 img-fluid" src="Images/lawOfSinesFormula.png" alt="Formulas for Right Triangle">
+                      </div>
+              
+                    </div>
+                  </div>
+                </div>
+              </section>
+    
+          </main>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+<footer class="footer bg-dark text-white py-4">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+              <a href="index.html" target="_self" id="navbarTitle" class="navbar-brand text-white">Math Solver PRO</a>
+              <h5 class="mt-2">Juan Matias Leon Lau</h5>
+          </div>
+          <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+              <p class="m-0">&copy; 2024 Math Solver PRO. All rights reserved.</p>
+          </div>
+          <div class="col-12 col-md-4 text-center text-md-end">
+            <a title="Github.com" href="https://github.com/mleon0526" target="_blank" class="text-white me-3"><i class="fa-brands fa-github fa-2x"></i></a>
+            <a title="stackoverflow.com" href="https://stackoverflow.com/users/22128785/matias-leon-lau?tab=profile" target="_blank" class="text-white me-3"><i class="fa-brands fa-stack-overflow fa-2x"></i></a>
+            <a title="gmail.com" href="mailto:matiasleonlau@gmail.com" class="text-white me-3"><i class="fas fa-envelope fa-2x"></i></a>              
+            <a title="linkedin.com" href="https://www.linkedin.com/in/matias-leon-lau-24a026282/" target="_blank" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="calculators.js"></script>
+  <script src="volume.js" defer></script>
+  <script src="area.js"></script>
+  <script src="converters.js" defer></script>
+  <script src="main.js"></script>
+
+</body>
+</html>

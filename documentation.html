@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Documentation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-dark bg-dark sticky-top">
+    <a href="index.html" target="_self" id="navbarTitle" class="navbar-brand">Math Solver PRO</a>
+    <button type="button" class="navbar-toggler" id="navbarButton" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+        <div id="containerNavbar" class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <ul class="navbar-nav">
+                        <a href="index.html" target="_self"><h5  class="navbarCategoriesTitles">Calculators</h5></a>
+                        <li class="nav-item">
+                            <a href="index.html#Scientific_Calculator" class="nav-link text-white">Scientific Calculator</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="index.html#Hypothenuse_Finder" class="nav-link text-white">Hypothenuse Finder</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="index.html#Herons_formula_Finder" class="nav-link text-white">Heron Area Finder</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="index.html#Find_angles_and_sides_of_Triangle_calculator" class="nav-link text-white">Trigonometric Calculator</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="navbar-nav">
+                        <a href="converters.html" target="_self"><h5 class="navbarCategoriesTitles">Converters</h5></a>
+                        
+                        <li class="nav-item">
+                          <a href="converters.html#Length_Converter" class="nav-link text-white">Length Converter</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="converters.html#Time_Converter" class="nav-link text-white">Time Converter</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="converters.html#Currency_Converter" class="nav-link text-white">Currency Converter</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="converters.html#Weight_Converter" class="nav-link text-white">Weight Converter</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="converters.html#Temperature_Converter" class="nav-link text-white">Temperature Converter</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="converters.html#Radian/Deegree_Converter" class="nav-link text-white">Radian/Degree Converter</a>
+                       </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="navbar-nav">
+                        <a href="geometric.html" target="_self"><h5 class="navbarCategoriesTitles">Geometric Finders</h5></a>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white" data-bs-toggle="collapse" data-bs-target="#volumeGeometricCollapse" aria-expanded="false" aria-controls="volumeGeometricCollapse">Volume</a>
+                            <ul class="collapse" id="volumeGeometricCollapse">
+                                <li class="nav-item">
+                                  <a href="geometric.html#volumeofRectangleTitle" class="nav-link text-white">Rectangle</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="geometric.html#volumeofSphereDiv" class="nav-link text-white">Sphere</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="geometric.html#volumeOfCylinderDiv" class="nav-link text-white">Cylinder</a>
+                                </li>
+
+                                <li class="nav-item">
+                                  <a href="geometric.html#volumeOfConeDiv" class="nav-link text-white">Cone</a>
+                              </li>
+                                <li class="nav-item">
+                                  <a href="geometric.html#volumeOfPyramidDiv" class="nav-link text-white">Pyramid</a>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="nav-link text-white" data-bs-toggle="collapse" data-bs-target="#areaGeometricCollapse" aria-expanded="false" aria-controls="areaGeometricCollapse">Area</a>
+                            <ul class="collapse" id="areaGeometricCollapse">
+                              
+                              <li class="nav-item">
+                                <a href="geometric.html#areaOfCricleDiv" class="nav-link text-white">Circle</a>
+                              </li>
+
+                              <li class="nav-item">
+                                <a href="geometric.html#areaOf2DRectangleDiv" class="nav-link text-white">Rectangle</a>
+                              </li>
+
+                              <li class="nav-item">
+                                <a href="geometric.html#areaOfTriangleDiv" class="nav-link text-white">Triangle</a>
+                              </li>
+
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="navbar-nav">
+                        <a href="documentation.html" target="_self"><h5 class="navbarCategoriesTitles">Documentation</h5></a>
+                        <li class="nav-item">
+                          <a href="documentation.html#Trigonometry_and_Geometry" class="nav-link text-white">Trigonometry</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="documentation.html#geometrySectionTitle" class="nav-link text-white">Geometry</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="documentation.html#Algebra" class="nav-link text-white">Algebra</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="documentation.html#Statistics" class="nav-link text-white">Statistics</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a href="documentation.html#Calculus" class="nav-link text-white">Calculus</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </nav>
+
+ <div class="container-fluid">
+   <div class="row">
+      <div class="col-md-12 backgroundImage">
+         <main id="mainPage">
+    
+            <h1 id="DocumentationTitle" class="hColor titleDetails mt-4">Documentation</h1>
+
+            <div class="d-flex justify-content-center">
+              <p class="introParagraph mb-5">
+                Dive into detailed explanations, examples, and applications in the fields of trigonometry, geometry, algebra, calculus, and statistics. Our expertly curated content is designed to support students, educators, and professionals, offering clear and concise documentation that makes even the most complex topics accessible.
+                From understanding trigonometric functions and geometric theorems to solving algebraic equations, exploring calculus concepts, and analyzing statistical data, our resources are here to enhance your learning and problem-solving skills. Whether you're preparing for exams, teaching a class, or working on a project, our math documentation provides the tools and insights you need to succeed.              
+              </p>
+            </div>
+         
+            <section id="Trigonometry_and_Geometry">
+              <h2 class="hColor titleDetails" id="trigTitle">Trigonometry</h2>
+              <h3 class="sectionTitles titleDetails" id="Trig6fFunctionTitle">6 Trigonometric Ratios/Functions</h3>
+              
+              <div class="container mt-5 d-flex justify-content-center trigDocImg1and2Div DocumentationSpaceContainers">
+                <div class="row justify-content-center">
+                  <div class="col-sm-6 bg-dark d-flex justify-content-center imageBackgroundSettings TrigRatiosDivImg1">
+                    <img id="TrigRatiosImg1" class="documentationImagesSettings img-fluid align-items-center" src="Images/6trigfunctions.png" alt="trig Ratios img 3">
+                  </div>
+                  <div class="col-sm-6 bg-dark d-flex justify-content-center imageBackgroundSettings TrigRatiosDivImg2 mx-auto">
+                    <img id="TrigRatiosImg2" class="documentationImagesSettings img-fluid" src="/Images/reciprocalFunctions.png" alt="trig Ratios img 3">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="container mt-5 d-flex justify-content-center trigImg3Div DocumentationSpaceContainers">
+                <div class="row gap-4">
+  
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img id="TrigRatiosImg3" class="documentationImagesSettings image-fluid" src="/Images/trigometric identities.png" alt="trig Ratios img 3">
+                  </div>
+  
+                </div>
+              </div>
+  
+              <h3 class="sectionTitles titleDetails ">Radian Circle / Chart </h3>
+  
+              <div class="container mt-5 d-flex justify-content-center containerTrigDocImg4 DocumentationSpaceContainers">
+                <div class="row gap-4">
+                  <div class="col-md-12 bg-dark d-flex justify-content-center imageBackgroundSettings trigDocDivImg4">
+                    <img id="TrigRatiosImg4" class="documentationImagesSettings img-fluid trigDocumentationImgSettings" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fscienceline.org%2Fwp-content%2Fuploads%2F2016%2F06%2FDegree-Radian_Conversion_tau.png&f=1&nofb=1&ipt=caa8d14d9dd5abe058b76538bdf993ba1c6637a89e9d677d7eb1053d9e9452dd&ipo=images" alt="trig Ratios img 4">
+                  </div>
+                </div>
+              </div>
+              
+  
+              <div class="container mt-5 d-flex justify-content-center containerTrigDocImg5 DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img id="TrigRatiosImg5" class="documentationImagesSettings trigDocumentationImgSettings" src="https://physicscatalyst.com/article/wp-content/uploads/2020/05/sin-cos-tan-csc-sec-cot-0-360-table.png" alt="trig Ratios img 5">
+                  </div>
+            
+                </div>
+              </div>
+  
+              <h3 class="sectionTitles titleDetails">Pythagorean Identities</h3>
+  
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col-md-12 bg-dark d-flex justify-content-center imageBackgroundSettings" id="pythTrigDocDivImg">
+                    <img id="TriPythIdenImg1" class="trigDocumentationImgSettings" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpleacher.com%2Fhandley%2Fgifs%2Fpythago.gif&f=1&nofb=1&ipt=46ce52971b3fb8cb730e00d88b70e46720f3a9a223b77b395aa24783a7cf295e&ipo=images" alt="pythagorean Identities">
+                  </div>
+            
+                </div>
+              </div>     
+  
+              <h3 class="sectionTitles titleDetails">Arc Length Formula</h3>
+  
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings arcTrigDocDivImg">
+                    <img id="arcImg1" class="trigDocumentationImgSettings" src="/images/arcLength.png" alt="Arc Length">
+                  </div>
+            
+                </div>
+              </div>
+            
+  
+              <h3 class="sectionTitles titleDetails">Area of Sector Formula</h3>
+  
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img id="sectorImg1" class="trigDocumentationImgSettings" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F3.bp.blogspot.com%2F-pulX0Az3yDc%2FU_nQBnotW-I%2FAAAAAAAAAYA%2FgGCRBheb-TA%2Fs1600%2FPicture7.png&f=1&nofb=1&ipt=dc04905113d4b05b306cd9301d9c593992d6be083ebca94784c4298e0658c1ec&ipo=images" alt="Area of Sector">
+                  </div>
+            
+                </div>
+              </div>
+  
+              <h3 class="sectionTitles titleDetails">30 60 90 Triangle</h3>
+  
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.2w-MOdKEKfTqJn8pE23f-QHaEX%26pid%3DApi&f=1&ipt=2d4d0626e8551fb6a06bb2eb98c3f42b255467f90b3279fba71d202c604e9bf7&ipo=images" alt="Circle Equation">
+                  </div>
+            
+                </div>
+              </div>
+  
+              <h3 class="sectionTitles titleDetails"> 45 45 90 Traingle</h3>
+  
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2Foriginals%2Fea%2F11%2F9f%2Fea119f500fe64a0a9ba2e33f3ad3b833.jpg&f=1&nofb=1&ipt=595e3f31cf9ed5b4cd23fa219a8869ad22568c47bcbafd2b24de3c01e6b0f05a&ipo=images" alt="45 45 90 Triangle">
+                  </div>
+            
+                </div>
+              </div>
+              
+              <h1 id="geometrySectionTitle" class="hColor titleDetails ">Geometry</h1>
+              
+              <h3 id="polygonChartDocTitle" class="sectionTitles titleDetails">Polygon Chart</h3>
+  
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="/images/polygonChart.png" alt="Polygon Chart">
+                  </div>
+            
+                </div>
+              </div>
+              
+              <h3 class="sectionTitles titleDetails">Circle Equation</h3>
+  
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.statisticslectures.com%2Fimages%2Fcircle11.gif&f=1&nofb=1&ipt=e66192993c246676a0f0d6fb075f3d88f8b917c7a7e971e530d31e19f4543368&ipo=images" alt="Circle Equation">
+                  </div>
+            
+                </div>
+              </div>
+              
+              <h3 class="sectionTitles titleDetails">Area of Shapes</h3>
+              
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="/Images/areaShapes.png" alt="Area of Shapes Formulas">
+                  </div>
+            
+                </div>
+              </div>              
+              
+              <h3 class="sectionTitles titleDetails">Volume of Shapes</h3>
+  
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="/Images/volumeShapes.png" alt="Volume of Shapes Formulas">
+                  </div>
+            
+                </div>
+              </div>  
+       
+            </section>
+  
+            <section id="Algebra">
+  
+             <h2 id="algTitle" class="titleDetails">Algebra</h2> 
+  
+             <h3 class="sectionTitles titleDetails"> Quadratic Formula</h3>
+  
+             <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+              <div class="row gap-4">
+          
+                <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                  <img class="trigDocumentationImgSettings" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F7%2F75%2FQuadratic_Formula.jpg&f=1&nofb=1&ipt=2e9c2489e3ad3b6268613fa90403dd8bcea3cfde025490ab871cf528345379b6&ipo=images" alt="Volume of Shapes Formulas">
+                </div>
+          
+              </div>
+            </div>           
+             
+              <h3 class="sectionTitles titleDetails"> Parabola</h3>
+              
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.IbtBGj804fu4yA4IiHb8vwHaGZ%26pid%3DApi&f=1&ipt=05f9b2f1b3286512be2814c448c749ebead83f232e54d44654b7e63ab37bfe09&ipo=images" alt="Volume of Shapes Formulas">
+                  </div>
+            
+                </div>
+              </div>
+                          
+             
+             <h3 class="sectionTitles titleDetails">Parabola (Vertex Form)</h3>
+  
+             <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+              <div class="row gap-4">
+          
+                <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                  <img class="trigDocumentationImgSettings" src="/images/vertexForm.png" alt="Volume of Shapes Formulas">
+                </div>
+          
+              </div>
+            </div>
+                     
+             
+             <h3 class="sectionTitles titleDetails"> Parabola (Standard Form)</h3>
+  
+             <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+              <div class="row gap-4">
+          
+                <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                  <img class="trigDocumentationImgSettings" src="/images/standardForm.png" alt="Volume of Shapes Formulas">
+                </div>
+          
+              </div>
+            </div>              
+             
+             <h3 class="sectionTitles titleDetails"> Parabola (Intercept Form)</h3>
+             
+             <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+              <div class="row gap-4">
+          
+                <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                  <img class="trigDocumentationImgSettings" src="/images/interceptForm.png" alt="Volume of Shapes Formulas">
+                </div>
+          
+              </div>
+            </div>
+          
+           
+            </section>
+  
+            <section id="Statistics">
+  
+              <h2 id="statisticsTitlle" class="titleDetails">Statistics</h2>
+  
+              <div class="container DocumentationSpaceContainers">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card mb-3 shadowForElements borderStatCards">
+                      <div class="card-header bg-dark text-white text-center">Mean</div>
+                      <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.whatissixsigma.net%2Fwp-content%2Fuploads%2F2014%2F03%2FBasic-Statistics-Mean.png&f=1&nofb=1&ipt=edf78e6938dbd5f2708d80637127c01b3dfeda48d592982c7fccebcd750f01a9&ipo=images" class="card-img-top" alt="Mean Image">
+                      <div class="card-body bg-dark text-white">
+                        <p class="card-text">Add all the values and divide by the amount of values.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card mb-3 shadowForElements borderStatCards">
+                      <div class="card-header bg-dark text-white text-center">Range</div>
+                      <img id="statCardImg2" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd138zd1ktt9iqe.cloudfront.net%2Fmedia%2Fseo_landing_files%2Famar-range-in-statistics-01-1608010215.png&f=1&nofb=1&ipt=304fc8a0bb292e07027b40d5eb7d003e38cae9e1d1531a799d3224381b472e70&ipo=images" alt="Range Graph">
+                      <div class="card-body bg-dark text-white">
+                        <p class="card-text">The difference between the smallest number and the biggest number.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card mb-3 shadowForElements borderStatCards">
+                      <div class="card-header bg-dark text-white text-center">Mode</div>
+                      <img id="statCardImg3" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatistics.laerd.com%2Fstatistical-guides%2Fimg%2Fmode-1.png&f=1&nofb=1&ipt=e0d67b98c4a8d43e6f45d69a1b6af67c6896730cfe9655da6fa62a6f9627d092&ipo=images" alt="Mode Image">
+                      <div class="card-body bg-dark text-white">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item bg-dark text-white">The value that it's most repeated.</li>
+                          <li class="list-group-item bg-dark text-white">If there's no repeated number, there is no mode.</li>
+                          <li class="list-group-item bg-dark text-white">If there are two or more values that are repeated in the same amount, select all of them as the mode.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="col-md-6">
+                    <div class="card mb-3 shadowForElements borderStatCards">
+                      <div class="card-header bg-dark text-white text-center">Median</div>
+                      <img id="statCardImg4" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbetterexplained.com%2Fwp-content%2Fuploads%2Faverage%2Fmedian.png&f=1&nofb=1&ipt=3d5c0d59ca4343aa22f50e2b20aaad89e36c137520ab9f3c5c7700f5358b554e&ipo=images" alt="Median Graph">
+                      <div class="card-body bg-dark text-white">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item bg-dark text-white">Arrange all values from decreasing to increasing and check for the middle number.</li>
+                          <li class="list-group-item bg-dark text-white">In case there is no middle number, choose two numbers in the middle, add them and divide them by 2.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>            
+  
+              <h3 class="sectionTitles titleDetails">Skewed / Symmetrical Graphs</h3>
+  
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.6iBD-zQdHFJL519_7MJ4qwHaCZ%26pid%3DApi&f=1&ipt=5e663e617bbabd21adb8ad903071712de42bf5822d7ea34f8c2f2d2bbfece48c&ipo=images" alt="Skewed / Symmetrical Graphs">
+                  </div>
+            
+                </div>
+              </div>    
+  
+              <h3 class="sectionTitles titleDetails">Standard Deviation Formula</h3>
+              
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2Foriginals%2F01%2F12%2Fb2%2F0112b2f65c79e7dc4665f79355451cbb.jpg&f=1&nofb=1&ipt=1c3b58645b2f6a237a855de17cda2e101a59895fa873058b2564ee0ed0ed347f&ipo=images" alt="Standard Deviation Formula">
+                  </div>
+            
+                </div>
+              </div>
+  
+              <h3 class="sectionTitles titleDetails">Standard Deviation Graph</h3>
+             
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Hctc5bb4X3bdt1mQ0Cl6OgHaGS%26pid%3DApi&f=1&ipt=eca34a6a3473018f3b2abb2256894b23505fc3e3776bedc8ff8e3a81da19e639&ipo=images" alt="Standard Deviation graph Example">
+                  </div>
+            
+                </div>
+              </div>
+  
+            </section>
+  
+            <section id="Calculus" class="sectionTitles">
+  
+              <h1 id="calculusTitle" class="titleDetails">Calculus</h1>
+  
+              <h3 class="sectionTitles titleDetails">infinity</h3>
+  
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2F3b%2Fbd%2F7b%2F3bbd7b2f9e5763d5f907a1337c116013.jpg&f=1&nofb=1&ipt=d6df096980708d9d8f41a395868999cb5ad4083e7d3a318fdc3b95138b4a6079&ipo=images" alt="Infinity Rules">
+                  </div>
+            
+                </div>
+              </div>
+              
+              <h3 class="sectionTitles titleDetails">Limit Formula</h3>
+  
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="https://www.pngitem.com/pimgs/m/617-6178754_diagram-hd-png-download.png" alt="Limits">
+                  </div>
+            
+                </div>
+              </div>              
+             
+              <h3 class="sectionTitles titleDetails">Derrivatives Rules</h3>
+              
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Ff3%2F7f%2F48%2Ff37f48ed9699ff4bca0754828d2d5c2a.png&f=1&nofb=1&ipt=e6799f1ada23e5fc6be2d337973195a7b4590bae60322f720bd7507e0a298ee7&ipo=images" alt="Derrivatives Rules">
+                  </div>
+            
+                </div>
+              </div>
+                          
+              <h3 class="sectionTitles titleDetails">Trigonometric Derrivatives</h3>
+  
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F63%2F24%2F64%2F6324644b74e827c47cb67c9e902db870.gif&f=1&nofb=1&ipt=e811b2032ab480aabf3fd4cf519a51d6e0592bfd82aee29b92f133fd604b908b&ipo=images" alt="Trigonometric Derrivatives">
+                  </div>
+            
+                </div>
+              </div>
+             
+             <h3 class="sectionTitles titleDetails">Chain Rule Trigonometric Functions</h3>
+  
+             <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+              <div class="row gap-4">
+          
+                <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                  <img class="trigDocumentationImgSettings" src="/Images/derrivativeExample.png" alt=" Chain Rule">
+                </div>
+          
+              </div>
+            </div>
+              
+              <h3 class="sectionTitles titleDetails">Basic Derrivative Examples</h3>
+  
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="/Images/derrivativeExample1.png" alt="basic derrivative example">
+                  </div>
+            
+                </div>
+              </div>
+              
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="/Images/derrivativeExample2.0.png" alt="basic derrivative example 2">
+                  </div>
+            
+                </div>
+              </div> 
+                         
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="/Images/derrivativeExample3.png" alt="basic derrivative example 3">
+                  </div>
+            
+                </div>
+              </div>        
+              
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="/Images/derrivativeExample4.png" alt="basic derrivative example 4">
+                  </div>
+            
+                </div>
+              </div>
+              
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="/Images/derrivativeExample5.png" alt="basic derrivative example 5">
+                  </div>
+            
+                </div>
+              </div>
+                        
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="/Images/derrivativeExample6.png" alt="basic derrivative example 6">
+                  </div>
+            
+                </div>
+              </div>
+
+              <h3 class="sectionTitles titleDetails">Common Integrals</h3>
+              
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="/Images/integrationRules.png" alt="basic derrivative example 6">
+                  </div>
+            
+                </div>
+              </div>
+              
+              <h3 class="sectionTitles titleDetails"> U Substitution Rule</h3>
+
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Frevisionworld.com%2Fsites%2Frevisionworld.com%2Ffiles%2Fimce%2Fsubstitution2.gif&f=1&nofb=1&ipt=95156ecf5802566af020ff06e181ac09177ee964c25b759e3eb0d37389bf26b6&ipo=images" alt="basic derrivative example 6">
+                  </div>
+            
+                </div>
+              </div>   
+              
+              <h3 class="sectionTitles titleDetails">ILATE Rule Table</h3>
+
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="/Images/ILATE.png" alt="basic derrivative example 6">
+                  </div>
+            
+                </div>
+              </div> 
+              
+              <h3 class="sectionTitles titleDetails">Integration By Parts Formula</h3>
+
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="/Images/integrationPartsFormula.png" alt="basic derrivative example 6">
+                  </div>
+            
+                </div>
+              </div> 
+
+              <h3 class="sectionTitles titleDetails">Integration By Parts Example</h3>
+
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage1.slideserve.com%2F2428789%2Fslide6-l.jpg&f=1&nofb=1&ipt=1633d3cf39a14abd4584c31e1790342c515148568a51a5ec64be1a444155ac2a&ipo=images" alt="basic derrivative example 6">
+                  </div>
+            
+                </div>
+              </div>
+              
+              <h3 class="sectionTitles titleDetails">Integration By Partial Fractions</h3>
+
+              <div class="container mt-5 d-flex justify-content-center DocumentationSpaceContainers">
+                <div class="row gap-4">
+            
+                  <div class="col md-12 bg-dark d-flex justify-content-center imageBackgroundSettings">
+                    <img class="trigDocumentationImgSettings" src="/Images/integrationPartialFractions.png" alt="basic derrivative example 6">
+                  </div>
+            
+                </div>
+              </div> 
+            
+            </section>
+
+         </main>
+      </div>
+   </div>
+ </div>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white py-4">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+              <a href="index.html" target="_self" id="navbarTitle" class="navbar-brand text-white">Math Solver PRO</a>
+              <h5 class="mt-2">Juan Matias Leon Lau</h5>
+          </div>
+          <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+              <p class="m-0">&copy; 2024 Math Solver PRO. All rights reserved.</p>
+          </div>
+          <div class="col-12 col-md-4 text-center text-md-end">
+            <a title="Github.com" href="https://github.com/mleon0526" target="_blank" class="text-white me-3"><i class="fa-brands fa-github fa-2x"></i></a>
+            <a title="stackoverflow.com" href="https://stackoverflow.com/users/22128785/matias-leon-lau?tab=profile" target="_blank" class="text-white me-3"><i class="fa-brands fa-stack-overflow fa-2x"></i></a>
+            <a title="gmail.com" href="mailto:matiasleonlau@gmail.com" class="text-white me-3"><i class="fas fa-envelope fa-2x"></i></a>              
+            <a title="linkedin.com" href="https://www.linkedin.com/in/matias-leon-lau-24a026282/" target="_blank" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+ <script src="main.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

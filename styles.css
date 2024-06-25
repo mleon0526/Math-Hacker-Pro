@@ -1,0 +1,627 @@
+/* general settings---------------------------------------------------------------------------------------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.backgroundImage {
+    background-image: url("/Images/mathSolverWallpaper.jpg");
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
+/* Navbar Settings---------------------------------------------------------------------------------------------------------------- */
+
+#navbar {
+    transition: top 0.5s;
+    border: 1px solid white;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+}
+
+.fixed {
+    position: fixed;
+    top: 10px;
+    right: 3px;
+}
+
+.navbarCategoriesTitles {
+    font-weight: 700;
+    color:aqua;
+}
+
+#navbarTitle {
+    font-weight: bold;
+    font-size: 145%;
+    margin-left: 1rem;
+}
+
+#navbarButton {
+    margin-right: 2rem;
+}
+
+#containerNavbar {
+    margin-top: 1rem;
+}
+
+/* .navbar-title-link {
+    text-decoration: none;
+}
+
+.navbar-title-link:hover {
+    text-decoration: none;
+} */
+
+ nav a {
+    text-decoration: none;
+}
+
+
+/*Introduction----------------------------------------------------------------------------------------------------------------------*/
+
+#mainTitle {
+    font-size: 3rem;
+    margin-top:4%;
+}
+
+.introParagraph {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color:white;
+    text-align:justify;
+    width: 80%;
+}
+
+/* Scientific Calculator------------------------------------------------------------------------------------------------------------------------------ */
+
+#result::placeholder {
+    color: white !important;
+}
+
+.ScientCalcTitle {
+    margin-top: 3rem;
+}
+
+#divCalculator {
+    background-color: #332D2D;
+}
+
+
+#Scientific_Calculator {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    max-height: 10rem;
+    height: 100%;
+    margin-bottom: 20rem;
+}
+
+.calculator {
+    border: 2px solid black;
+    border-radius: 0 0 7% 7%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 35rem;
+    width: 100%;
+
+    margin: auto; /* Add this line to center the div horizontally */
+}
+
+.calculatorButtons {
+    transition-duration: 0.4s;
+    color: white !important;
+    transition-duration: 0.4s; 
+      box-shadow: 0 5px #666;
+  }
+
+  .calculatorButtons:hover {
+    box-shadow: 0 5px #666;
+    background-color: white !important; /* Green */
+    color: black !important;
+    border: none;
+  }
+
+  button:active {
+    transform: translateY(4px); /* Green */
+    box-shadow: 0px 0px 10px redwhite;
+
+  }
+
+#result {
+    height: 3rem;
+    border-radius: 1rem 1rem 0 0;
+    margin-right: 5.5%;
+    background-color: #332D2D;
+    box-shadow: 0px 0px 0px 1px white;
+    border: none;
+    margin: 0 auto;
+    width: 18.5rem;
+    color: white;
+    text-align: right;
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+    max-width: 35rem;
+    width: 100%;
+    height: 3.5rem;
+}
+
+#squareRootButton {
+    font-weight: bold;
+}
+
+/* Hypotenuse Finder-----------------------------------------------------------------------------------------------------------------------*/
+
+#Hypothenuse_Finder {
+    margin-top: 10rem;
+}
+
+#hypothenuseDivBody {
+    border-radius: 10%;
+    height: 24rem;
+    padding: 2rem;
+    height: 100%;
+}
+
+.hypothenuseInputBorders {
+    border:none !important; 
+}
+
+#boxA, #boxB, #boxC {
+    border: none;
+    background-color: lightslategrey;
+}
+
+/*Heron Area Finder-------------------------------------------------------------------------------------------------------------------------*/
+
+#Herons_formula_Finder {
+    margin-top: 7rem;
+    margin: 0 auto;
+    margin-bottom: 7rem;
+}
+
+#heronDivBody {
+    max-width: 45rem;
+    border-radius: 10%;
+    height: 35rem;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+#formOfInputsHeron {
+    margin-top: 1rem;
+}
+
+.heronRowDivs {
+    margin-bottom: 1.5rem;
+}
+
+.heronInputs {
+    border: none !important;
+    background-color: lightslategrey !important;
+}
+
+#divFindSButton {
+    margin-bottom: 1rem;
+}
+
+.heronInputLetterID {
+    border:none !important;
+}
+
+/* General Converter Settings -----------------------------------------------------------------------------------------------------------------------------------*/
+
+.converterTitleDetails {
+    font-weight: bold;
+    text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
+    text-align: center;
+    color: white;
+    font-size: 225%;
+    padding: 1.5rem;
+}
+
+.converterSectionDetails { 
+    margin-bottom: 10rem;
+    border-radius: 1.5rem;
+    height: 100% !important;  
+}
+
+.heightConverterDetail {
+    height: 13rem;
+}
+
+/*General Converter Settings-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.converterInputBoxes {
+    border: none !important;
+    background-color: lightslategrey !important;
+}
+
+.converterButtons {
+    margin-right: 0.65rem;
+    width: 3rem;
+    height: 2.5rem;
+    background-color: lightslategrey;
+}
+
+#placeLength, #chosenTime, #chosenWeight, #chosenTemperature, #placeDegRadNumber {
+    margin-right: 0.65rem; 
+}
+/* currency converter */
+#currencyConverterButton {
+    border: 2rem white;
+}
+
+.currencyText {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    list-style-type: none;
+    margin: 2rem auto;
+    text-align: justify; 
+    width: 100%;  
+}
+
+.currencyText li  {
+    margin-bottom: 0.5rem;
+}
+
+
+/* Responsive adjustments for .currencyText */
+@media (max-width: 768px) {
+    .currencyText {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .currencyText {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+.currencyText2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style-type: none;
+    margin: 0 auto;
+    text-align: left; 
+    margin-bottom: 3rem; 
+}
+
+.currencyText2 li  {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments for .currencyText2 */
+@media (max-width: 768px) {
+    .currencyText2 {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+.currencyFlags2 {
+    width: 3rem;
+    height: 2rem;
+}
+
+/* Responsive adjustments for .currencyFlags2 */
+@media (max-width: 768px) {
+    .currencyFlags2 {
+        width: 2.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .currencyFlags2 {
+        width: 2rem;
+        height: 1rem;
+    }
+}
+
+.currencyFlags {
+    width: 3rem;
+    height: 1.5rem;
+}
+
+/* Responsive adjustments for .currencyFlags */
+@media (max-width: 768px) {
+    .currencyFlags {
+        width: 2.5rem;
+        height: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .currencyFlags {
+        width: 2rem;
+        height: 1rem;
+    }
+}
+
+#currencyConverterSwapButton {
+    margin-right: 0.65rem;
+    width: 3rem;
+    height: 2.5rem;
+    background-color: lightslategrey;
+    border: none;
+    margin-left: 0.55rem;
+  }
+
+  .currencySVGImage {
+    margin: 0 auto;
+  }
+/*radian/degree converter*/
+#piButton:hover {
+    color: white;
+}
+
+
+/* Volume Finders General Settings--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.volumeInputBoxes {
+    background-color: lightslategray !important;
+    border: none !important;
+}
+
+.volumeTitles {
+    color: white !important;
+    text-align: center;
+}
+
+#volumeofShapesTitle {
+    margin-bottom: 5rem;
+}
+
+.shapeVolDivImg1 {
+    max-width: 18rem !important; 
+    max-height: 14rem !important;
+    border-radius: 5% !important;
+}
+
+.shapeVolImg1 {
+    width: 18rem !important;
+    height: 14rem !important;
+}
+
+.shapeVolDivImg2 {
+    max-width: 18rem !important;
+    border-radius: 4% !important;
+}
+
+.shapeVolImg2 {
+    width: 18rem !important;
+    height: 14rem !important;
+    border-radius: 4% !important;
+}
+
+/*Geometric Finders Settings---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.GeometricTitles {
+    color: white !important;
+    text-align: center;
+}
+
+.GeometricInputBoxes {
+    background-color: lightslategray !important;
+    border: none !important;
+}
+
+.shapeGeoDivImg1 {
+    max-width: 18rem !important; 
+    max-height: 14rem !important;
+    border-radius: 5% !important;
+}
+
+.shapeGeoImg1 {
+    width: 18rem !important;
+    height: 14rem !important;
+}
+
+.shapeGeoDivImg2 {
+    max-width: 18rem !important;
+    border-radius: 4% !important;
+}
+
+.shapeGeoImg2 {
+    width: 18rem !important;
+    height: 14rem !important;
+    border-radius: 4% !important;
+}
+
+/*Trigonometric Calculator--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.TrigCalcDivImg1 {
+    max-width: 16rem !important; 
+    max-height: 14rem !important;
+    border-radius: 5% !important;
+    margin-top: -5% !important;
+}
+
+.TrigCalcImg1 {
+    width: 18rem !important; /* Ensure the image fits within its container */
+    height: 14rem !important; /* Ensure the image maintains its aspect ratio */
+}
+
+.TrigCalcDivImg2 {
+    max-width: 21rem !important;
+    margin-top: -5% !important;
+}
+
+.TrigCalcImg2 {
+    width: 18rem !important;
+    height: 14rem !important;
+    border-radius: 4% !important;
+}
+
+/*Documentation General Settings--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.DocumentationSpaceContainers {
+    margin-bottom: 10% !important;
+}
+/*Documentation-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#trigTitle {
+    margin-top: 4%;
+}
+
+#Trig6fFunctionTitle {
+    margin-top: 8%;
+}
+
+#TrigRatiosImg1 {
+    max-width: 27rem;
+    width: 100%;
+}
+ 
+#TrigRatiosImg2 {
+    max-width: 27rem; 
+    width: 100%;
+}
+
+#TrigRatiosImg3 {
+    max-width: 35rem; 
+    width: 100%;
+}
+
+.trigDocumentationImgSettings {
+    width: 50rem;
+    max-width: 100%;
+    height: auto;
+}
+
+/* statistics documentation-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.borderStatCards {
+    border: none;
+}
+
+#statCardImg2 {
+    height: 16.9rem;
+}
+
+#statCardImg3 {
+    height: 15.9rem;     
+}
+
+#statCardImg4 {
+    height: 15.5rem;     
+}
+
+
+.hColor {
+    color: aliceblue;
+}
+
+.sectionTitles {
+    color: var(--white);
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+ 
+.documentationImagesSettings {
+    border-radius: 10px;
+}
+
+.selectorsConverters {
+    border: none;
+    border-radius: 8px;
+}
+
+.converterButtons {
+    border: none;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  .volumeBackground {
+    margin-top: 50px;
+    margin-bottom: 200px;
+    border-radius: 12px;
+  }
+
+  .h2VolumeTitles {
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+  }
+
+  ::placeholder {
+    color: white !important;
+  }
+
+  .imageBackgroundSettings { 
+    padding: 25px  0px 15px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 1px 1px white;
+  } 
+
+.titleDetails {
+    font-weight: bold;
+    text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
+    text-align: center;
+    color: white;
+    font-size: 245%;
+    margin-bottom: 2%;
+}
+
+  .shadowForElements {
+    box-shadow: 0px 0px 1px 1px white;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40; /* Bootstrap bg-dark */
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer .navbar-brand {
+    font-size: 1.75rem;
+    font-weight: bold;
+    display: block;
+}
+
+.footer h5 {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    margin-left: 0.8rem;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+.footer p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+ .input-group-text {
+    height: 50%;
+ }
+

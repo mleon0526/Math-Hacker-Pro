@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../JavaScript practice/JavaScript CALC/node_modules"
+		}
+	],
+	"settings": {
+		"editor.inlineSuggest.showToolbar": "always",
+		"liveServer.settings.multiRootWorkspaceName": "Math Solver"
+	}
+}
